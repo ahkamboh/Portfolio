@@ -170,8 +170,8 @@ function sendEmail() {
     Password: "4403B55893D3259568D1C4B9BDBFBEC236BC",
     To:'alihamzakamboh180@gmail.com',
     From: 'kambohdiv@gmail.com',
-    Subject: "Thanks " +name,
+    Subject: "Query From user " +name,
     Body: "Hi,"+name + "&nbsp;"+" Thanks for joining ahkamboh 😊"+"<br>"+" Message:&nbsp;"+message+"<br>"+"Message from:&nbsp;"+email
   }).then(
-     alert("Thanks "+name+" For joining Kamboh div 😊. We will send you responsive email box for details that your submit now"));
+     alert("Thanks "+name+" For joining ah_Kamboh 😊. We will send you responsive email Soon "));
 }
