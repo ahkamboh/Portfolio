@@ -158,7 +158,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-/ Email sender 
+//Email sender 
 function sendEmail() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
