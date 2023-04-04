@@ -1174,22 +1174,25 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
+      <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" id="name" name="name"  class="form-input" placeholder="Full name" pattern="[A-zA-Z]{1,13}" required data-form-input>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required
+                data-form-input>
 
-              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required data-form-input>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input>
             </div>
 
-            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required
+              data-form-input></textarea>
             <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane" ></ion-icon>
-              <span >Send Message</span>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
             </button>
 
           </form>
+
 
         </section>
 
