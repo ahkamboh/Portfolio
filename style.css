@@ -4,11 +4,14 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2023 @ahkamboh
  */
 
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 /*-----------------------------------*\
