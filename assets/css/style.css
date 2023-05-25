@@ -1133,7 +1133,8 @@ main {
 
 .project-item-1>a:hover img {
   transform: scale(1.1);
-  background-image: url(E-web.gif);
+  background-image: url(Portfolio
+/assets/images/E-web.gif);
 }
 
 .project-img-2 img {
