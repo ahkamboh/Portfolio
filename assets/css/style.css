@@ -215,7 +215,6 @@ article {
   z-index: -1;
 }
 
-
 .icon-box ion-icon {
   --ionicon-stroke-width: 35px;
 }
@@ -1092,7 +1091,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item>a:hover .project-img::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -1112,7 +1111,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item>a:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1123,146 +1122,141 @@ main {
 
 .project-img-1 img {
   width: 100%;
-  height: 150px;
-  background-image: url(E-web.png);
+  height: 200px;
+  background-image: url(E-web.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-1 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(E-web.gif);
+.project-item-1>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-img-2 img {
   width: 100%;
-  height: 150px;
-  background-image: url(wikipedia-assistant.png);
+  height: 200px;
+  background-image: url(wikipedia-assistant.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-2 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(wikipedia-assistant.gif);
+.project-item-2>a:hover img {
+  transform: scale(1.5);
+
 }
 
 .project-img-3 img {
   width: 100%;
-  height: 150px;
-  background-image: url(Text-editor.png);
+  height: 200px;
+  background-image: url(Text-editor.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-3 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Text-editor.gif);
+.project-item-3>a:hover img {
+  transform: scale(1.5);
+  
 }
 
 .project-img-4 img {
   width: 100%;
-  height: 150px;
-  background-image: url(Horizontal.png);
+  height: 200px;
+  background-image: url(Horizontal.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-4 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Horizontal.gif);
+.project-item-4>a:hover img {
+  transform: scale(1.5);
+
 }
 
 .project-img-5 img {
   width: 100%;
-  height: 150px;
-  background-image: url(Poetry.png);
+  height: 200px;
+  background-image: url(Poetry.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-5 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Poetry.gif);
+.project-item-5>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-img-6 img {
   width: 100%;
-  height: 150px;
-  background-image: url(Gradient.png);
+  height: 200px;
+  background-image: url(Gradient.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-6 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Gradient.gif);
+.project-item-6>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-img-7 img {
   width: 100%;
-  height: 150px;
-  background-image: url(E-application.png);
+  height: 200px;
+  background-image: url(E-application.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-7 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(E-application.gif);
+.project-item-7>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-img-8 img {
   width: 100%;
-  height: 150px;
-  background-image: url(H-application.png);
+  height: 200px;
+  background-image: url(H-application.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
 }
 
-.project-item-8 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(H-application.gif);
+.project-item-8>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-img-9 img {
   width: 100%;
-  height: 150px;
-  background-image: url(C-application.png);
+  height: 200px;
+  background-image: url(C-application.gif);
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  transform: scale(1.4);
   background-position: center center;
   transition: var(--transition-1);
+  z-index: -1;
 }
 
-.project-item-9 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(C-application.gif);
+.project-item-9>a:hover img {
+  transform: scale(1.5);
 }
 
 .project-title,
@@ -1592,6 +1586,8 @@ textarea.form-input::-webkit-resizer {
 
 }
 
+
+
 /**
  * responsive smaller than 680px screen
  */
@@ -1609,12 +1605,156 @@ textarea.form-input::-webkit-resizer {
 
 
 
+
 /**
  * responsive larger than 580px screen
  */
 
 @media (min-width: 580px) {
 
+  .project-img-1 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(E-web.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-1>a:hover img {
+    transform: scale(1.1);
+    background-image: url(E-web.gif);
+  }
+  
+  .project-img-2 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(wikipedia-assistant.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-2>a:hover img {
+    transform: scale(1.1);
+    background-image: url(wikipedia-assistant.gif);
+  }
+  
+  .project-img-3 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(Text-editor.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-3>a:hover img {
+    transform: scale(1.1);
+    background-image: url(Text-editor.gif);
+  }
+  
+  .project-img-4 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(Horizontal.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-4>a:hover img {
+    transform: scale(1.1);
+    background-image: url(Horizontal.gif);
+  }
+  
+  .project-img-5 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(Poetry.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-5>a:hover img {
+    transform: scale(1.1);
+    background-image: url(Poetry.gif);
+  }
+  
+  .project-img-6 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(Gradient.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-6>a:hover img {
+    transform: scale(1.1);
+    background-image: url(Gradient.gif);
+  }
+  
+  .project-img-7 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(E-application.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-7>a:hover img {
+    transform: scale(1.1);
+    background-image: url(E-application.gif);
+  }
+  
+  .project-img-8 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(H-application.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-8>a:hover img {
+    transform: scale(1.1);
+    background-image: url(H-application.gif);
+  }
+  
+  .project-img-9 img {
+    width: 100%;
+    height: 150px;
+    background-image: url(C-application.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.03);
+    background-position: center center;
+    transition: var(--transition-1);
+  }
+  
+  .project-item-9>a:hover img {
+    transform: scale(1.1);
+    background-image: url(C-application.gif);
+  }
   /**
    * CUSTOM PROPERTY
    */
