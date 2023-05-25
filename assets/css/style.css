@@ -1611,91 +1611,91 @@ textarea.form-input::-webkit-resizer {
     
 .project-img-1 img {
   background-image: url(E-web.gif);
- transform: scale(1.25);
+ transform: scale(1.3);
 }
 .project-item-1 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(E-web.gif);
+	 transform: scale(1.5);
+  background-image: url(E-web.png);
 }
 
 .project-img-2 img {
   background-image: url(wikipedia-assistant.gif);
-   transform: scale(1.25);
+   transform: scale(1.3);
 }
 
 .project-item-2 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(wikipedia-assistant.gif);
+	 transform: scale(1.5);
+  background-image: url(wikipedia-assistant.png);
 }
 
 .project-img-3 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(Text-editor.gif);
 }
 
 .project-item-3 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(Text-editor.gif);
+	 transform: scale(1.5);
+  background-image: url(Text-editor.png);
 }
 
 .project-img-4 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(Horizontal.gif);
 }
 
 .project-item-4 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(Horizontal.gif);
+	 transform: scale(1.5);
+  background-image: url(Horizontal.png);
 }
 
 .project-img-5 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(Poetry.gif);
 }
 
 .project-item-5 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(Poetry.gif);
+	 transform: scale(1.5);
+  background-image: url(Poetry.png);
 }
 
 .project-img-6 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(Gradient.gif);
 }
 
 .project-item-6 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(Gradient.gif);
+	 transform: scale(1.5);
+  background-image: url(Gradient.png);
 }
 
 .project-img-7 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(E-application.gif);
 }
 
 .project-item-7 > a:hover img {
-	 transform: scale(1.2);
-  background-image: url(E-application.gif);
+	 transform: scale(1.5);
+  background-image: url(E-application.png);
 }
 
 .project-img-8 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(H-application.gif);
 }
 
 .project-item-8>a:hover img {
-  transform: scale(1.2);
-  background-image: url(H-application.gif);
+  transform: scale(1.5);
+  background-image: url(H-application.png);
 }
 
 .project-img-9 img {
-	 transform: scale(1.25);
+	 transform: scale(1.3);
   background-image: url(C-application.gif);
 }
 
 .project-item-9>a:hover img {
-	 transform: scale(1.2);
-  background-image: url(C-application.gif);
+	 transform: scale(1.5);
+  background-image: url(C-application.png);
 }
 }
 
