@@ -5,21 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="max-age=3600">
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="script.js" as="script">
-  <link rel="preload" href="image.jpg" as="image">
+  <!-- fb & Whatsapp -->
+  <!-- Site Name, Title, and Description to be displayed -->
+  <meta property="og:site_name" content="Ali Hamza Kamboh">
+  <meta property="og:title" content="Ali Hamza Kamboh">
+  <meta property="og:description"
+    content="  This is ALI HAMZA KAMBOH and I am a seasoned programmer and website developer. My passion for technology started at a young age. ">
+  <!-- Image to display -->
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/ahkamboh/ahkamboh/main/Kamboh-frame-work/jpgtopngconverter-com.png">
+  <!-- No need to change anything here -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png">
+  <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <!-- Website to visit when clicked in fb or WhatsApp-->
+  <meta property="og:url" content="https://www.alihamzakamboh.com">
   <title>Ali Hamza Kamboh</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rkyKpEqhBXMBS-DIr");
+    })();
+  </script>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="ahkambohlogo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/ah-icon.png" type="image/x-icon">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!--
     - google font link
@@ -27,6 +47,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +68,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="IMG_20211102_154104_610.png" alt="Ali Hamza" width="60">
+          <img src="assets/images/Image-1.png" alt="Ali Hamza" width="60">
         </figure>
 
         <div class="info-content">
@@ -129,18 +151,17 @@
         </ul>
 
         <div class="separator"></div>
-
-      <ul class="social-list">
-            <li class="social-item">
+        <ul class="social-list">
+          <li class="social-item">
             <a href="https://github.com/ahkamboh" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
-          </li> 
+          </li>
           <li class="social-item">
             <a href="https://www.linkedin.com/in/ali-hamza-kamboh-940282257/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-          </li> 
+          </li>
           <li class="social-item">
             <a href="https://www.instagram.com/ah_kamboh/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
@@ -239,7 +260,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="icon-design.svg
+                <img src="assets/images/icon-design.svg
                 " alt="design icon" width="40">
               </div>
 
@@ -256,7 +277,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="icon-dev.svg" alt="Web development icon" width="40">
+                <img src="assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -272,7 +293,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="icons8-quill-with-ink-64.png" alt="mobile app icon" width="40">
+                <img src="assets/images/icons8-quill-with-ink-64.png" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -280,6 +301,7 @@
 
                 <p class="service-item-text">
                   Poetry is the spontaneous overflow of powerful feelings.
+                </p>
               </div>
 
             </li>
@@ -287,7 +309,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="icon-photo.svg" alt="camera icon" width="40">
+                <img src="assets/images/icon-photo.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -299,7 +321,7 @@
               </div>
 
             </li>
-            
+
 
           </ul>
 
@@ -320,16 +342,17 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="avatar-1.png" alt="Abu Zar" width="60" data-testimonials-avatar>
+                  <img src="assets/images/avatar-1.png" alt="Abu Zar" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Abu Zar</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
+                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has
+                    a
                     lot of experience
-                    and is very concerned about the needs of client. 
+                    and is very concerned about the needs of client.
                   </p>
                 </div>
 
@@ -340,16 +363,17 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="avatar-2.png" alt="Hilma" width="60" data-testimonials-avatar>
+                  <img src="assets/images/avatar-2.png" alt="Hilma" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Halima</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
+                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has
+                    a
                     lot of experience
-                    and is very concerned about the needs of client. 
+                    and is very concerned about the needs of client.
                   </p>
                 </div>
 
@@ -360,16 +384,17 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="avatar-3.png" alt="Kashmala" width="60" data-testimonials-avatar>
+                  <img src="assets/images/avatar-3.png" alt="Kashmala" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Kashmala</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
+                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has
+                    a
                     lot of experience
-                    and is very concerned about the needs of client. 
+                    and is very concerned about the needs of client.
                   </p>
                 </div>
 
@@ -380,14 +405,15 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="avatar-4.png" alt="Abu bakar" width="60" data-testimonials-avatar>
+                  <img src="assets/images/avatar-4.png" alt="Abu bakar" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Abu Bakar</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
+                    ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has
+                    a
                     lot of experience
                     and is very concerned about the needs of client.
                   </p>
@@ -415,12 +441,12 @@
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="mod
-              <figure class="modal-avatar-box">
-                <img src="avatar-1.png" alt="Mehmat Ali" width="80" data-modal-img>
+            <div class="modal-content">
+              <figure class=" modal-avatar-box">
+                <img src="assets/images/avatar-1.png" alt="Mehmat Ali" width="80" data-modal-img>
               </figure>
 
-              <img src="icon-quote.svg" alt="quote icon">
+              <img src="assets/images/icon-quote.svg" alt="quote icon">
             </div>
 
             <div class="modal-content">
@@ -431,7 +457,7 @@
 
               <div data-modal-text>
                 <p>
-                 ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
+                  ah_kamboh was hired to create a corporate identity. We were very pleased with the work done. He has a
                   lot of experience
                   and is very concerned about the needs of client.
                 </p>
@@ -456,37 +482,37 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-1-color.png" alt="client logo">
+                <img src="assets/images/logo-1-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-2-color.png" alt="client logo">
+                <img src="assets/images/logo-2-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-3-color.png" alt="client logo">
+                <img src="assets/images/logo-3-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-4-color.png" alt="client logo">
+                <img src="assets/images/logo-4-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-5-color.png" alt="client logo">
+                <img src="assets/images/logo-5-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="logo-6-color.png" alt="client logo">
+                <img src="assets/images/logo-6-color.png" alt="client logo">
               </a>
             </li>
 
@@ -529,7 +555,8 @@
               <span>2006 — 2010</span>
 
               <p class="timeline-text">
-                I read in this school from playgroup to 3rd standard. Then I moved to Lahore Pakistan for elite quality of Education.
+                I read in this school from playgroup to 3rd standard. Then I moved to Lahore Pakistan for elite quality
+                of Education.
               </p>
 
             </li>
@@ -541,7 +568,8 @@
               <span>2011 — 2014</span>
 
               <p class="timeline-text">
-                I read in this school from 1st standard to 5th. I lost my three classes due to inadequate education at my village school.
+                I read in this school from 1st standard to 5th. I lost my three classes due to inadequate education at
+                my village school.
               </p>
 
             </li>
@@ -553,19 +581,23 @@
               <span>2014 — 2020</span>
 
               <p class="timeline-text">
-                I read in this school from 6th standard to 10th. This is the best school in the government sector of Pakistan. Because it provides that kinda stuff that another private sector school provides taking a lot of money. It's the only school that pushes my level up and that's always will stay in my soul.
+                I read in this school from 6th standard to 10th. This is the best school in the government sector of
+                Pakistan. Because it provides that kinda stuff that another private sector school provides taking a lot
+                of money. It's the only school that pushes my level up and that's always will stay in my soul.
               </p>
 
             </li>
-            
+
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Concordia college Pakistan</h4>
+              <h4 class="h4 timeline-item-title">Beacon House college</h4>
 
               <span>2020 — 2022</span>
 
               <p class="timeline-text">
-                I finished my 2 years of reading in 11th and 12th standard here. To cut a long story short, in 2 years I learned nothing rather than the race of numbers between students. The ridiculous thing, that was your friend sitting beside you, he used to be felt an opponent in front of you.
+                I finished my 2 years of reading in 11th and 12th standard here. To cut a long story short, in 2 years I
+                learned nothing rather than the race of numbers between students. The ridiculous thing, that was your
+                friend sitting beside you, he used to be felt an opponent in front of you.
               </p>
 
             </li>
@@ -593,7 +625,8 @@
               <span>2018 — </span>
 
               <p class="timeline-text">
-                Editor plan, revise, and coordinate material for publication in newspapers, magazines, books, or websites.
+                Editor plan, revise, and coordinate material for publication in newspapers, magazines, books, or
+                websites.
               </p>
 
             </li>
@@ -605,8 +638,9 @@
               <span>2020 — </span>
 
               <p class="timeline-text">
-                Graphic design is a craft where professionals create visual content to communicate messages. By applying visual 
-                hierarchy and page layout techniques, designers use typography and pictures to me                
+                Graphic design is a craft where professionals create visual content to communicate messages. By applying
+                visual
+                hierarchy and page layout techniques, designers use typography and pictures to me
               </p>
 
             </li>
@@ -618,7 +652,10 @@
               <span>2022 — </span>
 
               <p class="timeline-text">
-                My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. Sometimes I write poetry when I am bored with all this stuff.
+                My job is to build your website so that it is functional and user-friendly but at the same time
+                attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy
+                to use. My aim is to bring across your message and identity in the most creative way. Sometimes I write
+                poetry when I am bored with all this stuff.
               </p>
 
             </li>
@@ -757,170 +794,172 @@
                 <button data-select-item>Web development</button>
               </li>
 
+
             </ul>
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item-1 project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/ahkamboh/Shoping-E-commerce-Webiste" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-1">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-1.jpg" alt="finance" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">E-commerce</h3>
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item-2 project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/ahkamboh/wikipedia-assistant-" target="_blank">
+
+                <figure class="project-img project-img-2">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ai Assistant
+                </h3>
+
+                <p class="project-category"> Wikipedia
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item-3 project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/ahkamboh/Text-Eidter-in-js" target="_blank">
+
+                <figure class="project-img project-img-3">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Text Editor</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item-4 project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/ahkamboh/horizontal-scrolling-website" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-4">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-2.png" alt="orizon" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Horizontal-Scrolling</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item-5 project-item active" data-filter-item data-category="web design">
+              <a href="https://github.com/ahkamboh/website-design-fully-responsive " target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-5">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-3.jpg" alt="fundo" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Poetry</h3>
 
                 <p class="project-category">Web design</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item-6 project-item active" data-filter-item data-category="web design">
+              <a href="https://github.com/ahkamboh/gradient-generator" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-6">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-4.png" alt="brawlhalla" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Gradient Generater</h3>
 
                 <p class="project-category">Web design</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item-7 project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/ahkamboh/Shoping-E-commerce-Webiste" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-7">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-6.png" alt="metaspark" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">E-Mobile</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Application</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item-8 project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/ahkamboh/horizontal-scrolling-website" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-8">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-7.png" alt="summary" loading="lazy">
+                  <img loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">H-Mobile</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Application</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item-9  project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/ahkamboh/Calculater-by-javascript" target="_blank">
 
-                <figure class="project-img">
+                <figure class="project-img project-img-9">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="project-8.jpg" alt="task manager" loading="lazy">
+                  <img -1 loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
+                <h3 class="project-title">Calcuater</h3>
 
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">Application</p>
 
               </a>
             </li>
@@ -933,8 +972,6 @@
 
 
 
-
-
       <!--
         - #BLOG
       -->
@@ -942,18 +979,19 @@
       <article class="blog" data-page="poetry">
 
         <header>
-          <h2 class="h2 article-title"><P>Poetry</P></h2>
+          <h2 class="h2 article-title">
+            <P>Services</P>
+          </h2>
         </header>
 
         <section class="blog-posts">
-
           <ul class="blog-posts-list">
-
             <li class="blog-post-item">
-              <a  href="https://www.instagram.com/p/CivYPYYMY-z/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-1.html" target="_blank">
 
-                <figure  class="blog-banner-box">
-                  <img  src="ale.humza shikhwa lahasal.jpeg" alt="Shikwa Lahasal conferences in 2022" loading="lazy">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/ale.humza shikhwa lahasal.jpeg" alt="Shikwa Lahasal conferences in 2022"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -969,7 +1007,7 @@
                   <h3 class="h3 blog-item-title">شکوہِ لحاصل</h3>
 
                   <p class="blog-text">
-                    In this poem, I wrote a complaint to someone unreachable.                  </p>
+                    In this poem, I wrote a complaint to someone unreachable. </p>
 
                 </div>
 
@@ -977,10 +1015,9 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Cncb8Uosoez/?utm_source=ig_web_copy_link">
-
+              <a href="assets/Poetry pages/Page-2.html" target="_blank">
                 <figure class="blog-banner-box">
-                  <img src="khlwat.jpeg" alt="Best fonts every designer" loading="lazy">
+                  <img src="assets/images/khlwat.jpeg" alt="Best fonts every designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1005,10 +1042,10 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Cm_aC1_sdUX/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-3.html" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="lahasl.jpeg" alt="Design digest #80" loading="lazy">
+                  <img src=" assets/images/lahasl.jpeg" alt="Design digest #80" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1024,19 +1061,18 @@
                   <h3 class="h3 blog-item-title">لا سوال اک جواب </h3>
 
                   <p class="blog-text">
-                    In this Poem, I answer an unanswerable question 
+                    In this Poem, I answer an unanswerable question
                   </p>
 
                 </div>
 
               </a>
             </li>
-
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Cm918NKMii1/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-4.html" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="gilmse.jpeg" alt="UI interactions of the week" loading="lazy">
+                  <img src="assets/images/gilmse.jpeg" alt="UI interactions of the week" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1052,7 +1088,7 @@
                   <h3 class="h3 blog-item-title">A glimpse of past</h3>
 
                   <p class="blog-text">
-                    The poem that  I wrote in English is about my past. 
+                    The poem that I wrote in English is about my past.
                   </p>
 
                 </div>
@@ -1061,10 +1097,10 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Ck77Xg_MENY/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-5.html" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="janein gulzar.jpeg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="assets/images/janein gulzar.jpeg" alt="The forgotten art of spacing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1089,10 +1125,10 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Cl89epoMQqd/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-6.html" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="shukre.jpeg" alt="Design digest #79" loading="lazy">
+                  <img src="assets/images/shukre.jpeg" alt="Design digest #79" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1115,12 +1151,12 @@
 
               </a>
             </li>
-            
+
             <li class="blog-post-item">
-              <a href="https://www.instagram.com/p/Cc1UJMJB_Oc/?utm_source=ig_web_copy_link">
+              <a href="assets/Poetry pages/Page-7.html" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="chin clift.jpeg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="assets/images/chin clift.jpeg" alt="The forgotten art of spacing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1133,7 +1169,7 @@
                     <time datetime="2022-02-23">April 27, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">ٹھوڑی کھو  </h3>
+                  <h3 class="h3 blog-item-title">ٹھوڑی کھو </h3>
 
                   <p class="blog-text">
                     In this poem, I wrote about someone who is immensely close to my heart and also iski chin cleft.
@@ -1143,9 +1179,88 @@
 
               </a>
             </li>
+            <li class="blog-post-item">
+              <a href="assets/Poetry pages/Page-8.html" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/شکوہِ-قلبی.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
 
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Wrote</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">May 21, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">شکوہِ قلبی</h3>
+
+                  <p class="blog-text">
+                    In this poem, I describe relation of believe btw ALLAH and humans
+                  </p>
+                </div>
+              </a>
+
+            </li>
+            <li class="blog-post-item">
+              <a href="assets/Poetry pages/Page-9.html" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/a-cleft-aroma.png " alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Wrote</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June 21, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">A cleft aroma</h3>
+
+                  <p class="blog-text">
+                    In this poem, I describe A cleft aroma .
+                  </p>
+                </div>
+              </a>
+
+            </li>
+
+            <li class="blog-post-item">
+              <a href="assets/Poetry pages/Page-10.html" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/skoone talab.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Wrote</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">May 1, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">سکونِ طلب
+                  </h3>
+
+                  <p class="blog-text">
+                    In this poem, I describe about Peace
+                  </p>
+                </div>
+              </a>
+
+            </li>
           </ul>
-
+          <div class="book-btn">
+            <a href="/assets/Poetry pages/دیوانِ علی حمزہ.pdf" download> <img src="assets/images/book-download-btn.png"
+                alt="btn"> Download book</a>
+          </div>
         </section>
 
       </article>
@@ -1166,7 +1281,10 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1424.5716221983762!2d73.73016632546168!3d31.797802197275143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918bbde8550225d%3A0x181cc0d503cf39a3!2sAli%20Hamza%20Kamboh!5e1!3m2!1sen!2s!4v1677701836958!5m2!1sen!2s" width="300" height="400"loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.0094354790494!2d73.72902251579906!3d31.797492781278844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918bbde8550225d%3A0x181cc0d503cf39a3!2sAli%20Hamza%20Kamboh!5e0!3m2!1sen!2s!4v1680618939062!5m2!1sen!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
@@ -1174,7 +1292,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-      <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
+          <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required
@@ -1193,35 +1311,21 @@
 
           </form>
 
-
         </section>
 
       </article>
 
     </div>
-
   </main>
   <!--
     - Form validation notification and Email sender 
   -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  var input = document.getElementById('text');
-  input.oninvalid = function(event) {
-event.target.setCustomValidity('Enter Your name But first letter must be capital');
-}
-</script>
-
-
-
-
-
-
 
   <!--
     - custom js link
   -->
-  <script src="script.js"></script>
+  <script src="assets/js/script.js" async></script>
 
   <!--
     - ionicon link
