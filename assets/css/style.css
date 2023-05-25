@@ -1612,7 +1612,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(E-web.gif);
 
 }
-.project-item-1>a:hover img {
+.project-item-1 > a:hover img {
   background-image: url(E-web.png);
 }
 
@@ -1621,7 +1621,7 @@ textarea.form-input::-webkit-resizer {
   
 }
 
-.project-item-2>a:hover img {
+.project-item-2 > a:hover img {
   background-image: url(wikipedia-assistant.png);
 }
 
@@ -1629,7 +1629,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(Text-editor.gif);
 }
 
-.project-item-3>a:hover img {
+.project-item-3 > a:hover img {
   background-image: url(Text-editor.png);
 }
 
@@ -1637,7 +1637,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(Horizontal.gif);
 }
 
-.project-item-4>a:hover img {
+.project-item-4 > a:hover img {
   background-image: url(Horizontal.png);
 }
 
@@ -1645,7 +1645,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(Poetry.gif);
 }
 
-.project-item-5>a:hover img {
+.project-item-5 > a:hover img {
   background-image: url(Poetry.png);
 }
 
@@ -1653,7 +1653,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(Gradient.gif);
 }
 
-.project-item-6>a:hover img {
+.project-item-6 > a:hover img {
   background-image: url(Gradient.png);
 }
 
@@ -1661,7 +1661,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(E-application.gif);
 }
 
-.project-item-7>a:hover img {
+.project-item-7 > a:hover img {
   transform: scale(1.1);
   background-image: url(E-application.png);
 }
@@ -1670,7 +1670,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(H-application.gif);
 }
 
-.project-item-8>a:hover img {
+.project-item-8 > a:hover img {
   transform: scale(1.1);
   background-image: url(H-application.png);
 }
@@ -1679,7 +1679,7 @@ textarea.form-input::-webkit-resizer {
   background-image: url(C-application.gif);
 }
 
-.project-item-9>a:hover img {
+.project-item-9 > a:hover img {
   background-image: url(C-application.png);
 }
 }
