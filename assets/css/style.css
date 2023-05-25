@@ -1608,149 +1608,94 @@ textarea.form-input::-webkit-resizer {
     top: 13px;
   }
 
-  
+    
 .project-img-1 img {
-  width: 100%;
-  height: 150px;
   background-image: url(E-web.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
+ transform: scale(1.25);
 }
-
 .project-item-1 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(E-web.png);
+	 transform: scale(1.2);
+  background-image: url(E-web.gif);
 }
 
 .project-img-2 img {
-  width: 100%;
-  height: 150px;
   background-image: url(wikipedia-assistant.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
+   transform: scale(1.25);
 }
 
 .project-item-2 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(wikipedia-assistant.png);
+	 transform: scale(1.2);
+  background-image: url(wikipedia-assistant.gif);
 }
 
 .project-img-3 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(Text-editor.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
 .project-item-3 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Text-editor.png);
+	 transform: scale(1.2);
+  background-image: url(Text-editor.gif);
 }
 
 .project-img-4 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(Horizontal.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.03);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
 .project-item-4 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Horizontal.png);
+	 transform: scale(1.2);
+  background-image: url(Horizontal.gif);
 }
 
 .project-img-5 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(Poetry.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.03);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
 .project-item-5 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Poetry.png);
+	 transform: scale(1.2);
+  background-image: url(Poetry.gif);
 }
 
 .project-img-6 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(Gradient.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
 .project-item-6 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(Gradient.png);
+	 transform: scale(1.2);
+  background-image: url(Gradient.gif);
 }
 
 .project-img-7 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(E-application.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
 .project-item-7 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(E-application.png);
+	 transform: scale(1.2);
+  background-image: url(E-application.gif);
 }
 
 .project-img-8 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(H-application.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
-.project-item-8 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(H-application.png);
+.project-item-8>a:hover img {
+  transform: scale(1.2);
+  background-image: url(H-application.gif);
 }
 
 .project-img-9 img {
-  width: 100%;
-  height: 150px;
+	 transform: scale(1.25);
   background-image: url(C-application.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.1);
-  background-position: center center;
-  transition: var(--transition-1);
 }
 
-.project-item-9 > a:hover img {
-  transform: scale(1.1);
-  background-image: url(C-application.png);
+.project-item-9>a:hover img {
+	 transform: scale(1.2);
+  background-image: url(C-application.gif);
 }
 }
 
