@@ -1134,7 +1134,7 @@ main {
 
 .project-item-1>a:hover img {
   transform: scale(1.1);
-  background-image: url(images/E-web.gif);
+  background-image: url(E-web.gif);
 }
 
 .project-img-2 img {
@@ -1607,6 +1607,81 @@ textarea.form-input::-webkit-resizer {
     width: 100%;
     top: 13px;
   }
+	  
+.project-img-1 img {
+  background-image: url(E-web.gif);
+
+}
+.project-item-1>a:hover img {
+  background-image: url(E-web.png);
+}
+
+.project-img-2 img {
+  background-image: url(wikipedia-assistant.gif);
+  
+}
+
+.project-item-2>a:hover img {
+  background-image: url(wikipedia-assistant.png);
+}
+
+.project-img-3 img {
+  background-image: url(Text-editor.gif);
+}
+
+.project-item-3>a:hover img {
+  background-image: url(Text-editor.png);
+}
+
+.project-img-4 img {
+  background-image: url(Horizontal.gif);
+}
+
+.project-item-4>a:hover img {
+  background-image: url(Horizontal.png);
+}
+
+.project-img-5 img {
+  background-image: url(Poetry.gif);
+}
+
+.project-item-5>a:hover img {
+  background-image: url(Poetry.png);
+}
+
+.project-img-6 img {
+  background-image: url(Gradient.gif);
+}
+
+.project-item-6>a:hover img {
+  background-image: url(Gradient.png);
+}
+
+.project-img-7 img {
+  background-image: url(E-application.gif);
+}
+
+.project-item-7>a:hover img {
+  transform: scale(1.1);
+  background-image: url(E-application.png);
+}
+
+.project-img-8 img {
+  background-image: url(H-application.gif);
+}
+
+.project-item-8>a:hover img {
+  transform: scale(1.1);
+  background-image: url(H-application.png);
+}
+
+.project-img-9 img {
+  background-image: url(C-application.gif);
+}
+
+.project-item-9>a:hover img {
+  background-image: url(C-application.png);
+}
 }
 
 
