@@ -160,6 +160,8 @@ textarea {
 
 html {
   font-family: var(--ff-poppins);
+cursor: url(curser-ah.png),auto;
+
 }
 
 body {
@@ -451,6 +453,8 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+ cursor:pointer;
+
 }
 
 .contact-info {
