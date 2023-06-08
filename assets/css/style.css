@@ -1602,6 +1602,9 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
   }
+	 .info-content .title  {
+    padding: 5.2px 12px;
+  }
 
 }
 
@@ -1619,6 +1622,9 @@ textarea.form-input::-webkit-resizer {
   .book-btn a {
     width: 100%;
     top: 13px;
+  }
+	 .info-content .title  {
+    padding: 5.2px 12px;
   }
 }
 
