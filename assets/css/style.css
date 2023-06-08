@@ -396,9 +396,16 @@ main {
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
+  width:fit-content;
+  height: 28px;
+  text-align: center;
   padding: 3px 12px;
   border-radius: 8px;
+  
+}
+/* To hide type text bar  */
+.typed-cursor {
+ display: none;
 }
 
 .info_more-btn {
