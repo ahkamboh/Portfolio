@@ -113,29 +113,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
-
-
-// // contact form variables
-// const form = document.querySelector("[data-form]");
-// const formInputs = document.querySelectorAll("[data-form-input]");
-// const formBtn = document.querySelector("[data-form-btn]");
-
-// // add event to all form input field
-// for (let i = 0; i < formInputs.length; i++) {
-//   formInputs[i].addEventListener("input", function () {
-
-//     // check form validation
-//     if (form.checkValidity()) {
-//       formBtn.removeAttribute("disabled");
-//     } else {
-//       formBtn.setAttribute("disabled", "");
-//     }
-
-//   });
-// }
-
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
@@ -174,4 +151,11 @@ function sendEmail() {
   }).then(
      alert("Thanks "+name+" For joining Kamboh div 😊. We will send you responsive email Soon"));
 }
-
+// typed animtaion 
+var typed = new Typed('.title', {
+  strings: ['Youtuber','Coder','Poet','Web Developer'],
+  loop:true,
+  typeSpeed: 200,
+  backSpeed:100 ,  
+  startDelay:50 ,         
+});
