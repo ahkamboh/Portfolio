@@ -151,10 +151,10 @@ function sendEmail() {
   }).then(
      alert("Thanks "+name+" For joining Kamboh div 😊. We will send you responsive email Soon"));
 }
-// typed animtaion 
+// typed animation 
 var typed = new Typed('.title', {
-  strings: ['Youtuber','Coder','Poet','Web Developer'],
-  loop:true,
+  strings: ['Web Developer', ' Coder ',' Poet ',' Youtuber '],
+  loop: true,
   typeSpeed: 200,
   backSpeed:100 ,  
   startDelay:50 ,         
