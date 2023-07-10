@@ -52,6 +52,11 @@
 </head>
 
 <body>
+  <!-- Loader screen  -->
+
+  <!-- <div class="loaderbg">
+<img src="assets/images/loader.gif" alt="loader logo">
+	</div> -->
 
   <!--
     - #MAIN
@@ -73,7 +78,6 @@
 
         <div class="info-content">
           <h1 class="name" title="Ali Hamza Kamboh">ah_kamboh</h1>
-
           <p class="title"></p>
         </div>
 
@@ -174,10 +178,6 @@
 
     </aside>
 
-
-
-
-
     <!--
       - #main-content
     -->
@@ -229,7 +229,6 @@
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-
         <section class="about-text">
           <p>
             I'm Programmer and Poet from Panjab,Pakistan, working in web development.
@@ -801,30 +800,57 @@
 
           <ul class="project-list">
 
-            <li class="project-item-1 project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/ahkamboh/Shoping-E-commerce-Webiste" target="_blank">
+            <div class="iframe-1  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Code-Editor" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe1()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Code-Editor/" frameborder="0"></iframe>
+            </div>
 
+            <li onclick="iframe1()" class="project-item-1 project-item active" data-filter-item
+              data-category="web development">
+              <a>
                 <figure class="project-img project-img-1">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img>
+                  <img src="assets/images/Code Editor.png" alt="Code Edito">
                 </figure>
 
-                <h3 class="project-title">E-commerce</h3>
-                <p class="project-category">Web development</p>
+                <h3 class="project-title">Code Editor</h3>
+                <p class="project-category">Web App</p>
 
               </a>
             </li>
 
-            <li class="project-item-2 project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/ahkamboh/wikipedia-assistant-" target="_blank">
+            <div class="iframe-2 iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/wikipedia-assistant-" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe2()">&#215;</span>
+              </div>
+              <a href="https://github.com/ahkamboh/wikipedia-assistant-" class="social-link iframe-link" target="_blank">
+                <div class="py">
+                  <ion-icon class="py-git" name="logo-github"></ion-icon> <span>Visit Github</span>
+                </div>
+              </a>
+            </div>
 
+            <li onclick="iframe2()" class="project-item-2 project-item active" data-filter-item
+              data-category="web development">
+              <a>
                 <figure class="project-img project-img-2">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img>
+
+                  <img src="assets/images/Wikipedia.png">
                 </figure>
 
                 <h3 class="project-title">Ai Assistant
@@ -836,31 +862,54 @@
               </a>
             </li>
 
-            <li class="project-item-3 project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/ahkamboh/Text-Eidter-in-js" target="_blank">
+            <div class="iframe-3  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Terzo.ai" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe3()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Terzo.ai/" frameborder="0"></iframe>
+            </div>
+
+            <li onclick="iframe3()" class="project-item-3 project-item active" data-filter-item
+              data-category="web development">
+              <a>
 
                 <figure class="project-img project-img-3">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+
+                  <img src="assets/images/Terzo.ai.png">
                 </figure>
 
-                <h3 class="project-title">Text Editor</h3>
-
-                <p class="project-category">Web development</p>
+                <h3 class="project-title">Terzo.io</h3>
+                <p class="project-category">Tailwind App</p>
 
               </a>
             </li>
-
-            <li class="project-item-4 project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/ahkamboh/horizontal-scrolling-website" target="_blank">
+            <div class="iframe-4  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/horizontal-scrolling-website" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe4()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/horizontal-scrolling-website/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe4()" class="project-item-4 project-item active" data-filter-item
+              data-category="web development">
+              <a>
 
                 <figure class="project-img project-img-4">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+
+                  <img src="assets/images/Horizontal Portfolio.png">
                 </figure>
 
                 <h3 class="project-title">Horizontal-Scrolling</h3>
@@ -869,32 +918,53 @@
 
               </a>
             </li>
-
-            <li class="project-item-5 project-item active" data-filter-item data-category="web design">
-              <a href="https://github.com/ahkamboh/website-design-fully-responsive " target="_blank">
+            <div class="iframe-5  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/website-design-fully-responsive "
+                    class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe5()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/website-design-fully-responsive/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe5()" class="project-item-5 project-item active" data-filter-item
+              data-category="web design">
+              <a>
 
                 <figure class="project-img project-img-5">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+
+                  <img src="assets/images/Poetry Web.png">
                 </figure>
 
                 <h3 class="project-title">Poetry</h3>
-
                 <p class="project-category">Web design</p>
 
               </a>
             </li>
-
-            <li class="project-item-6 project-item active" data-filter-item data-category="web design">
-              <a href="https://github.com/ahkamboh/gradient-generator" target="_blank">
+            <div class="iframe-6  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/gradient-generator" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe6()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/gradient-generator/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe6()" class="project-item-6 project-item active" data-filter-item
+              data-category="web design">
+              <a>
 
                 <figure class="project-img project-img-6">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+                  <img src="assets/images/Gradient.ai.png">
                 </figure>
 
                 <h3 class="project-title">Gradient Generater</h3>
@@ -903,15 +973,80 @@
 
               </a>
             </li>
+            <div class="iframe-7  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Text-Eidter-in-js" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe7()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Text-Eidter-in-js/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe7()" class="project-item-3 project-item active" data-filter-item
+              data-category="web development">
+              <a>
 
-            <li class="project-item-7 project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/ahkamboh/Shoping-E-commerce-Webiste" target="_blank">
+                <figure class="project-img project-img-3">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/Text Editor.png">
+                </figure>
+
+                <h3 class="project-title">Text Editor</h3>
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <div class="iframe-8  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/EducationHub" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe8()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/EducationHub/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe8()" class="project-item-3 project-item active" data-filter-item
+              data-category="web development">
+              <a>
+
+                <figure class="project-img project-img-3">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/LAS APP.png">
+                </figure>
+
+                <h3 class="project-title">Educational App</h3>
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <div class="iframe-9  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Shoping-E-commerce-Webiste" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe9()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Shoping-E-commerce-Webiste/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe9()" class="project-item-7 project-item active" data-filter-item
+              data-category="applications">
+              <a>
 
                 <figure class="project-img project-img-7">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+
+                  <img src="assets/images/Kaesh.pk.png">
                 </figure>
 
                 <h3 class="project-title">E-Mobile</h3>
@@ -920,15 +1055,54 @@
 
               </a>
             </li>
+            <div class="iframe-10  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Result-card-Generator" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe10()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Result-card-Generator/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe10()" class="project-item-7 project-item active" data-filter-item
+              data-category="applications">
+              <a>
 
-            <li class="project-item-8 project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/ahkamboh/horizontal-scrolling-website" target="_blank">
+                <figure class="project-img project-img-7">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/Result gen.png">
+                </figure>
+
+                <h3 class="project-title">Result ai</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+            <div class="iframe-4  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/horizontal-scrolling-website" class="social-link iframe-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe4()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/horizontal-scrolling-website/" frameborder="0"></iframe>
+            </div>
+            <li onclick="iframe4()" class="project-item-8 project-item  active" data-filter-item
+              data-category="applications">
+              <a>
 
                 <figure class="project-img project-img-8">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img>
+
+                  <img src="assets/images/Horizonatl web app.png" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">H-Mobile</h3>
@@ -937,15 +1111,28 @@
 
               </a>
             </li>
+            <div class="iframe-11  iframe">
+              <div class="iframe-head">
+                <li class="social-item">
+                  <a href="https://github.com/ahkamboh/Calculater-by-javascript" class="social-link iframe-link"
+                    target="_blank">
+                    <ion-icon name="logo-github"></ion-icon> <span>Source code</span>
+                  </a>
+                </li><span onclick="iframe11()">&#215;</span>
+              </div>
+              <iframe src="https://ahkamboh.github.io/Calculater-by-javascript/" frameborder="0"></iframe>
+            </div>
 
-            <li class="project-item-9  project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/ahkamboh/Calculater-by-javascript" target="_blank">
+            <li onclick="iframe11()" class="project-item-9  project-item active" data-filter-item
+              data-category="applications">
+              <a>
 
                 <figure class="project-img project-img-9">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img >
+
+                  <img src="assets/images/Calculater.png">
                 </figure>
 
                 <h3 class="project-title">Calcuater</h3>
@@ -953,6 +1140,8 @@
                 <p class="project-category">Application</p>
 
               </a>
+            </li>
+
             </li>
 
           </ul>
@@ -999,9 +1188,7 @@
 
                   <p class="blog-text">
                     In this poem, I wrote a complaint to someone unreachable. </p>
-
                 </div>
-
               </a>
             </li>
 
@@ -1249,7 +1436,7 @@
             </li>
           </ul>
           <div class="book-btn">
-            <a href="assets/Poetry pages/دیوانِ علی حمزہ.pdf" download> <img src="assets/images/book-download-btn.png"
+            <a href="/assets/Poetry pages/دیوانِ علی حمزہ.pdf" download> <img src="assets/images/book-download-btn.png"
                 alt="btn"> Download book</a>
           </div>
         </section>
@@ -1317,9 +1504,8 @@
     - custom js link
   -->
   <script src="assets/js/script.js" async></script>
-   <!-- Typed Animation js  -->
+  <!-- Typed Animation js  -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
   <!--
     - ionicon link
   -->
