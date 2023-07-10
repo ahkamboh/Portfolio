@@ -159,3 +159,39 @@ var typed = new Typed('.title', {
   backSpeed:100 ,  
   startDelay:50 ,         
 });
+
+
+//  all these  use to open projects 
+ function iframe1(){  document.querySelector('.iframe-1').classList.toggle('iframe-display');
+ document.querySelector('html').classList.toggle('overflow');
+}
+function iframe2(){  document.querySelector('.iframe-2').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe3(){  document.querySelector('.iframe-3').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe4(){  document.querySelector('.iframe-4').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe5(){  document.querySelector('.iframe-5').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe6(){  document.querySelector('.iframe-6').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe7(){  document.querySelector('.iframe-7').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe8(){  document.querySelector('.iframe-8').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe9(){  document.querySelector('.iframe-9').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe10(){  document.querySelector('.iframe-10').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
+function iframe11(){  document.querySelector('.iframe-11').classList.toggle('iframe-display');
+document.querySelector('html').classList.toggle('overflow');
+}
