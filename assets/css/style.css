@@ -1220,100 +1220,6 @@ main {
   transform: scale(1.1);
 }
 
-.iframe {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 6;
-  display: none;
-}
-
-.iframe-head {
-  width: 100%;
-  height: 50px;
-  color: aliceblue;
-  font-size: 1.7em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding-left: 20px;
-  padding-right: 10px;
-  background-color: #282829;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  position: fixed;
-  bottom: 0;
-
-}
-
-.iframe-head span {
-  background: transparent;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 50px;
-  position: relative;
-  transition: all .5s ease;
-
-}
-
-.iframe-head span:hover {
-  transition: all 1s ease;
-  color: #ffc562;
-
-}
-
-.iframe iframe {
-  padding-bottom: 50px;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-display {
-  display: block;
-  animation: iframefade .6s ease-in normal forwards;
-}
-
-@keyframes iframefade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-
-  }
-}
-
-.overflow {
-  overflow: hidden;
-}
-
-.iframe-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-}
-
-.iframe-link span {
-  color: white;
-  width: 100%;
-  font-size: small;
-}
-
-.iframe-link ion-icon {
-  color: #ffffff;
-}
-
-.iframe-link span:hover {
-  color: white;
-  text-decoration: 1px solid #ffc562 underline;
-}
 
 .project-img-2 img {
   width: 100%;
@@ -1321,29 +1227,6 @@ main {
   object-fit: fill;
   transition: var(--transition-1);
 }
-
-.iframe-2 {
-  background: #000;
-}
-
-.iframe-2 .py {
-  display: flex;
-  gap: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-}
-
-.iframe-2 .py-git {
-  font-size: 1.8em;
-}
-
-.iframe-2 .py span {
-  font-size: 1.2em;
-}
-
-
 
 .project-item-2>a:hover img {
   transform: scale(1.16);
