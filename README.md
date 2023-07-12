@@ -1,2 +1,3 @@
-# Portfolio by ALI HAMZA KAMBOH but i clone it from @codewithsadee
-# Output![Ali hamza kamboh](https://user-images.githubusercontent.com/123060177/227785884-ea1e221c-f820-4e4a-ba57-e3cf303e19e9.png)
+# Personal Portfolio of ALI HAMZA KAMBOH but I clone it from @codewithsadee
+![image](https://github.com/ahkamboh/Portfolio/assets/123060177/52b213c5-2cf3-4948-86b0-4b2904d85f2d)
+
