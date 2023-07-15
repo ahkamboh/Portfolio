@@ -1221,12 +1221,62 @@ main {
 }
 
 
+
+.iframe-head {
+  width: 100%;
+  height: 50px;
+  color: aliceblue;
+  font-size: 1.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: #282829;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  bottom: 0;
+
+}
+
+.iframe-head span {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+  position: relative;
+  transition: all .5s ease;
+
+}
+
+.iframe-head span:hover {
+  transition: all 1s ease;
+  color: #ffc562;
+
+}
+
+
+
+.overflow {
+  overflow: hidden;
+}
+
+
+
 .project-img-2 img {
   width: 100%;
   height: 150px;
   object-fit: fill;
   transition: var(--transition-1);
 }
+
+
+
+
 
 .project-item-2>a:hover img {
   transform: scale(1.16);
@@ -1330,7 +1380,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
-
 
 
 
@@ -1712,48 +1761,10 @@ main {
   }
 }
 
-
-.overflow {
-  overflow: hidden;
-}
-.iframe-head {
-  width: 100%;
-  height: 50px;
-  color: aliceblue;
-  font-size: 1.7em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding-left: 20px;
-  padding-right: 10px;
-  background-color: #282829;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  position: fixed;
-  bottom: 0;
-
-}
-.iframe-head span {
-  background: transparent;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 50px;
-  position: relative;
-  transition: all .5s ease;
-
-}
-.iframe-head span:hover {
-  transition: all 1s ease;
-  color: #ffc562;
-
-}
-
 /*-----------------------------------*\
   #Services
 \*-----------------------------------*/
+
 
 .blog-posts {
   margin-bottom: 10px;
@@ -1772,6 +1783,7 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .blog-post-item>a::before {
@@ -2828,7 +2840,6 @@ textarea.form-input::-webkit-resizer {
   }
 
 }
-
 
 @media (max-width: 400px) {
 
