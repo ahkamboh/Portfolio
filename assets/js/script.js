@@ -160,6 +160,160 @@ var typed = new Typed('.title', {
   startDelay:50 ,         
 });
 
+// ---------------------------------------
+// poetry show function
+function Poetry1() {
+  document.querySelector('.poetry-1').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry2() {
+  document.querySelector('.poetry-2').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry3() {
+  document.querySelector('.poetry-3').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+
+function Poetry4() {
+  document.querySelector('.poetry-4').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry5() {
+  document.querySelector('.poetry-5').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry6() {
+  document.querySelector('.poetry-6').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry7() {
+  document.querySelector('.poetry-7').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry8() {
+  document.querySelector('.poetry-8').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry9() {
+  document.querySelector('.poetry-9').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry10() {
+  document.querySelector('.poetry-10').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry11() {
+  document.querySelector('.poetry-11').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+function Poetry12() {
+  document.querySelector('.poetry-12').classList.toggle('Poetry-display');
+  document.querySelector('html').classList.toggle('overflow');
+}
+//  Copy button Function for poetry 
+function CopyP1() {
+  // Get the text field
+  let copyText = document.getElementById('copy-poetry-1');
+  // For button
+  let textChange = document.getElementById('btn-1')
+  textChange.innerText = 'Copied'
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  // For mobile devices
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP2() {
+  let copyText = document.getElementById('copy-poetry-2');
+  let textChange = document.getElementById('btn-2')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP3() {
+  let copyText = document.getElementById('copy-poetry-3');
+  let textChange = document.getElementById('btn-3')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP4() {
+  let copyText = document.getElementById('copy-poetry-4');
+  let textChange = document.getElementById('btn-4')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP5() {
+  let copyText = document.getElementById('copy-poetry-5');
+  let textChange = document.getElementById('btn-5')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP6() {
+  let copyText = document.getElementById('copy-poetry-6');
+  let textChange = document.getElementById('btn-6')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP7() {
+  let copyText = document.getElementById('copy-poetry-7');
+  let textChange = document.getElementById('btn-7')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP8() {
+  let copyText = document.getElementById('copy-poetry-8');
+  let textChange = document.getElementById('btn-8')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP9() {
+  let copyText = document.getElementById('copy-poetry-9');
+  let textChange = document.getElementById('btn-9')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP10() {
+  let copyText = document.getElementById('copy-poetry-10');
+  let textChange = document.getElementById('btn-10')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP11() {
+  let copyText = document.getElementById('copy-poetry-11');
+  let textChange = document.getElementById('btn-11')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+function CopyP12() {
+  let copyText = document.getElementById('copy-poetry-12');
+  let textChange = document.getElementById('btn-12')
+  textChange.innerText = 'Copied'
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+
 // To block inspect element on browser
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
