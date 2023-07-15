@@ -1334,6 +1334,385 @@ main {
 
 
 
+/* poetry  */
+.poetry {
+  position: fixed;
+  top: 0%;
+  padding: 0px;
+  left: 0%;
+  z-index: 5;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 10px;
+  padding-top: 60px;
+  display: none;
+
+}
+
+.poetry img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Poetry-display {
+  display: block;
+  animation: opacity .35s ease-in normal forwards;
+
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.poetry-head {
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Copybutton {
+  position: relative;
+  padding: 7px 49px;
+  background: #464647;
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border: 0;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  cursor: pointer;
+
+}
+
+
+
+.Copybutton:hover {
+  -webkit-animation: wind 2s ease-in-out infinite;
+  animation: wind 2s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  0% {
+    background-position: 50% 100%;
+  }
+
+  0% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  0% {
+    background-position: 50% 100%;
+  }
+
+  0% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+}
+
+.Copybutton:hover .icon-1 {
+  -webkit-animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+@-webkit-keyframes slay-1 {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes slay-1 {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+.icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+.Copybutton:hover .icon-2 {
+  -webkit-animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+@-webkit-keyframes slay-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+@keyframes slay-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+.icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+.Copybutton:hover .icon-3 {
+  -webkit-animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+@-webkit-keyframes slay-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+@keyframes slay-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+.buttonDownload {
+  position: relative;
+  padding: 5px 49px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border: 0;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.buttonDownload:hover {
+  color: white;
+  text-decoration: underline red solid;
+}
+
+.buttonDownload:before,
+.buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+
+.buttonDownload:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 1px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  -webkit-animation: downloadArrow 1s linear infinite;
+  animation: downloadArrow 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+  border-color: #cdefbd;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: #cdefbd;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.4;
+  }
+}
+
+@keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.4;
+  }
+}
+
+
 
 /*-----------------------------------*\
   #Services
@@ -2411,4 +2790,43 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 
+}
+
+
+@media (max-width: 400px) {
+
+  .buttonDownload,
+  .Copybutton {
+    padding: 5px 29px;
+  }
+
+  .buttonDownload:before,
+  .buttonDownload:after {
+    left: 8.2px;
+  }
+
+  .poetry {
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+
+  .poetry-head {
+    left: 0px;
+  }
+
+}
+
+@media (max-width: 290px) {
+
+  .buttonDownload,
+  .Copybutton {
+    padding: 5px 20px;
+
+  }
+
+  .buttonDownload:before,
+  .buttonDownload:after {
+    left: 5px;
+  }
 }
