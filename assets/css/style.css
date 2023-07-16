@@ -1411,7 +1411,7 @@ main {
 
 .Poetry-display {
   display: block;
-  animation: opacity .35s ease-in normal forwards;
+  animation: opacity .13s ease-in-out forwards;
 
 }
 
@@ -2881,3 +2881,4 @@ textarea.form-input::-webkit-resizer {
     left: 5px;
   }
 }
+/* ---------------------------------------------- Khatam Shodh------------------------------------------------------ */
