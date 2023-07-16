@@ -1428,12 +1428,13 @@ main {
 .poetry-head {
   top: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+ background: #333333;
 }
 
 .Copybutton {
   position: relative;
   padding: 7px 49px;
-  background: #464647;
+  background: #7c7a76;
   font-size: 17px;
   font-weight: 500;
   color: #181818;
@@ -2853,10 +2854,12 @@ textarea.form-input::-webkit-resizer {
     left: 8.2px;
   }
 
-  .poetry {
-    padding-left: 5px;
-    padding-right: 5px;
 
+  .poetry {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    background: #333333;
   }
 
   .poetry-head {
