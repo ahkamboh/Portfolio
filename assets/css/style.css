@@ -611,7 +611,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-6);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -2843,7 +2843,9 @@ textarea.form-input::-webkit-resizer {
 }
 
 @media (max-width: 400px) {
-
+  .navbar-link {
+    font-size: var(--fs-7);
+  }
   .buttonDownload,
   .Copybutton {
     padding: 5px 29px;
@@ -2854,18 +2856,32 @@ textarea.form-input::-webkit-resizer {
     left: 8.2px;
   }
 
-
   .poetry {
+
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 50px;
     background: #333333;
+
   }
 
   .poetry-head {
     left: 0px;
   }
 
+}
+@media (max-width: 340px) {
+  .navbar-link {
+    font-size: 12px;
+  }
+  
+  }
+
+@media (max-width: 310px) {
+  .navbar-link {
+    padding: 20px 5px;
+    font-size:10.5px;
+  }
 }
 
 @media (max-width: 290px) {
@@ -2881,4 +2897,5 @@ textarea.form-input::-webkit-resizer {
     left: 5px;
   }
 }
+
 /* ---------------------------------------------- Khatam Shodh------------------------------------------------------ */
