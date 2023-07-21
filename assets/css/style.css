@@ -1126,6 +1126,14 @@ main {
   --eerie-black-2: hsl(240, 2%, 20%);
 }
 
+#Blog-btn:hover{
+  
+text-decoration: underline;
+}
+#code-btn{
+  display: none;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -2841,6 +2849,12 @@ textarea.form-input::-webkit-resizer {
   }
 
 }
+@media (max-width: 768px){
+  #code-btn{
+    display: block;
+  }
+}
+
 
 @media (max-width: 400px) {
   .navbar-link {
