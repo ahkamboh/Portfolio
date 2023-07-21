@@ -150,6 +150,10 @@ progress {
     -webkit-appearance: button;
     font: inherit
 }
+::selection {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
 
 summary {
     display: list-item
