@@ -131,6 +131,11 @@ button,
 progress {
     vertical-align: baseline
 }
+:root {
+    --smoky-black: hsl(0, 0%, 7%);
+    --orange-yellow-crayola: hsl(45, 100%, 72%);
+}
+
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
