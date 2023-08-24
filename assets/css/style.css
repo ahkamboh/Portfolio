@@ -2818,7 +2818,10 @@ textarea.form-input::-webkit-resizer {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
+  .contact-info :is(.contact-link):hover{
+    text-overflow:clip;
+    overflow: visible;
+  }
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
