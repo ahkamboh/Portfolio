@@ -445,10 +445,11 @@ main {
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.09);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11.3px);
-  -webkit-backdrop-filter: blur(11.3px);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
   display: none;
   place-content: center;
+  padding: 50px;
 }
 
 .profile-card .circle {
@@ -2918,15 +2919,7 @@ textarea.form-input::-webkit-resizer {
   }
   
 }
-@media (max-width: 1000px){
 
- 
-  
-  .profile-card .circle{
-    scale: .7;
-  }
-  
-}
 
 
 @media (max-width: 400px) {
