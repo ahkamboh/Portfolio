@@ -197,3 +197,14 @@ document.onkeydown = function (e) {
     return false;
   }
 };
+
+let profileCard = document.querySelector(".profile-card");
+let html = document.querySelector("html");
+document.querySelector(".avatar-box").addEventListener("click", () => {
+    profileCard.style.display = "grid";
+    html.style.overflow = "hidden";
+});
+profileCard.addEventListener("click", () => {
+    profileCard.style.display = "none";
+    html.style.overflow = "visible";
+});

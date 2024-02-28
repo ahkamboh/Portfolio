@@ -114,7 +114,7 @@ html {
 }
 
 *,
-*::before,
+*::before, 
 *::after {
   margin: 0;
   padding: 0;
@@ -424,6 +424,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  cursor: pointer;
   
 }
 
@@ -431,6 +432,70 @@ main {
   border-radius: 20px;
 
 
+}
+
+
+.profile-card {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.3px);
+  -webkit-backdrop-filter: blur(11.3px);
+  display: none;
+  place-content: center;
+}
+
+.profile-card .circle {
+  overflow: hidden;
+  
+  border-radius: 50%;
+  
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,red , #ffae00);
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+.circle::before {
+  border-radius: 100%;
+  content: '';
+  background-image: linear-gradient(45deg, red , #ffae00);
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  position: absolute;
+  z-index:-1;
+}
+
+.profile-card .circle img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .info-content .name {
@@ -2851,6 +2916,16 @@ textarea.form-input::-webkit-resizer {
   #code-btn{
     display: block;
   }
+  
+}
+@media (max-width: 1000px){
+
+ 
+  
+  .profile-card .circle{
+    scale: .7;
+  }
+  
 }
 
 
