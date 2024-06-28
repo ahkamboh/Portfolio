@@ -140,17 +140,39 @@ function sendEmail() {
   let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
 
-   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "kambohdiv@gmail.com",
-    Password: "4403B55893D3259568D1C4B9BDBFBEC236BC",
-    To:'alihamzakamboh180@gmail.com',
-    From: 'kambohdiv@gmail.com',
-    Subject: "Thanks " +name,
-    Body: "Hi,"+name + "&nbsp;"+" Thanks for joining ahkamboh 😊"+"<br>"+" Message:&nbsp;"+message+"<br>"+"Message from:&nbsp;"+email
-  }).then(
-     alert("Thanks "+name+" For joining Kamboh div 😊. We will send you responsive email Soon"));
+  const params = {
+    user_name: name,
+    user_email: email,
+    user_message: message
+  };
+  const Tparams = {
+    user_name: name,
+    user_email: email,
+
+  };
+
+  console.log("Sending email with params:", params);
+  // Send email to admin
+  emailjs.send("service_3ovd4zr", "template_6smdvnd", params)
+    .then(function (response) {
+      console.log('Admin email sent successfully:', response);
+    })
+    .catch(function (error) {
+      console.error('Failed to send admin email. Error:', error);
+    });
+
+  // Send thank-you email to user
+  emailjs.send("service_3ovd4zr", "template_5px6g9g", Tparams)
+    .then(function (response) {
+      console.log('Thank-you email sent successfully:', response);
+      alert("Thanks " + name + " For joining ahkamboh 😊. We will send you responsive email Soon");
+    })
+    .catch(function (error) {
+      console.error('Failed to send thank-you email. Error:', error);
+    });
 }
+
+
 // typed animation 
 var typed = new Typed('.title', {
   strings: ['Web Developer', ' Coder ',' Poet ',' Youtuber '],
