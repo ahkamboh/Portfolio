@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my portfolio! I'm a passionate Full Stack Developer specializing in web development, AI integration, and creating innovative solutions. Explore my projects and skills.">
+    <meta name="keywords" content="portfolio, web developer, full stack developer, AI developer, React, Node.js, Python, JavaScript">
+    <meta name="author" content="Ali Hamza Kamboh">
+    <meta property="og:title" content="Ali Hamza Kamboh - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Explore my portfolio showcasing web development, AI projects, and innovative solutions.">
+    <meta property="og:image" content="assets/images/my-avatar.png">
+    <meta property="og:url" content="https://alihamzakamboh.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ali Hamza Kamboh - Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Explore my portfolio showcasing web development, AI projects, and innovative solutions.">
+    <meta name="twitter:image" content="assets/images/my-avatar.png">
+    <meta name="theme-color" content="#2563eb">
+
+    <title>My Projects - Ali Hamza Kamboh</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React and ReactDOM -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Syntax Highlighter -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markup.min.js"></script>
+
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet" />
+    
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    
+    <!-- Add your custom CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    
+    <style>
+
+      :root{
+
+/**
+ * colors
+ */
+
+/* gradient */
+
+--bg-gradient-onyx: linear-gradient(to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%);
+--bg-gradient-jet: linear-gradient(to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
+    hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+--bg-gradient-yellow-1: linear-gradient(to bottom right,
+    hsl(45, 100%, 71%) 0%,
+    hsla(36, 100%, 69%, 0) 50%);
+--bg-gradient-yellow-2: linear-gradient(135deg,
+    hsla(45, 100%, 71%, 0.251) 0%,
+    hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+--border-gradient-onyx: linear-gradient(to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%);
+--text-gradient-yellow: linear-gradient(to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%));
+
+/* solid */
+
+--jet: hsl(0, 0%, 22%);
+--onyx: hsl(240, 1%, 17%);
+--eerie-black-1: hsl(240, 2%, 13%);
+--eerie-black-2: hsl(240, 2%, 12%);
+--smoky-black: hsl(0, 0%, 7%);
+--white-1: hsl(0, 0%, 100%);
+--white-2: hsl(0, 0%, 98%);
+--orange-yellow-crayola: hsl(45, 100%, 72%);
+--vegas-gold: hsl(45, 54%, 58%);
+--light-gray: hsl(0, 0%, 84%);
+--light-gray-70: hsla(0, 0%, 84%, 0.7);
+--bittersweet-shimmer: hsl(0, 43%, 51%);
+
+/**
+ * typography
+ */
+
+/* font-family */
+--ff-poppins: 'Poppins', sans-serif;
+
+/* font-size */
+--fs-1: 24px;
+--fs-2: 18px;
+--fs-3: 17px;
+--fs-4: 16px;
+--fs-5: 15px;
+--fs-6: 14px;
+--fs-7: 13px;
+--fs-8: 11px;
+
+/* font-weight */
+--fw-300: 300;
+--fw-400: 400;
+--fw-500: 500;
+--fw-600: 600;
+
+/**
+ * shadow
+ */
+
+--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+--shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+--shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+--shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+--shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+/**
+ * transition
+ */
+
+--transition-1: 0.25s ease;
+--transition-2: 0.5s ease-in-out;
+
+}
+
+      .card {
+        @apply bg-white rounded-lg shadow-md overflow-hidden;
+      }
+
+      .button {
+        @apply px-4 py-2 rounded-md transition-colors;
+      }
+
+      .button-outline {
+        @apply border border-gray-300 hover:bg-gray-100;
+      }
+
+      .button-primary {
+        @apply bg-blue-600 text-white hover:bg-blue-700;
+      }
+
+      .loader {
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+ 
+      /* Add these new styles */
+      .repo-dialog {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
+
+      .repo-dialog-content {
+        background: white;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        max-width: 1200px;
+        width: 90%;
+        height: 80vh;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .repo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .clone-options {
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .clone-tabs {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .clone-tab {
+        padding: 0.25rem 0;
+        cursor: pointer;
+        color: #6b7280;
+      }
+
+      .clone-tab.active {
+        color: #2563eb;
+        font-weight: 500;
+      }
+
+      .clone-content {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background: #f9fafb;
+      }
+
+      .clone-url {
+        flex: 1;
+        padding: 0.5rem;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .repo-content {
+        flex: 1;
+        overflow: auto;
+      }
+
+      .file-item {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+        cursor: pointer;
+        border-bottom: 1px solid #e5e7eb;
+        transition: background-color 0.2s;
+      }
+
+      .file-item:hover {
+        background-color: #f3f4f6;
+      }
+
+      .file-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 0.75rem;
+        color: #6b7280;
+      }
+
+      .loader {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3b82f6;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      code {
+        font-family: monospace;
+        font-size: 0.9em;
+      }
+
+      /* Additional Prism styling */
+      pre[class*="language-"] {
+        padding: 1em;
+        margin: 0;
+        overflow: auto;
+        border-radius: 0.5rem;
+      }
+
+      code[class*="language-"] {
+        white-space: pre;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* Add these styles to your head section */
+      .file-header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+      }
+
+      .file-header button:hover {
+        color: #2563eb;
+      }
+
+      .file-path-separator {
+        color: #9ca3af;
+      }
+
+      /* Update body class and container styles */
+      body {
+         background: #121212;
+        color: var(--light-gray);
+        font-family: var(--ff-poppins);
+      }
+
+      .container {
+        background: var(--eerie-black-2);
+        border: 1px solid var(--jet);
+        border-radius: 20px;
+        padding: 2rem;
+        margin: 2rem auto;
+        box-shadow: var(--shadow-1);
+      }
+
+      .card {
+        background: var(--eerie-black-1);
+        border: 1px solid var(--jet);
+        border-radius: 20px;
+        padding: 1.5rem;
+        transition: var(--transition-1);
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-2);
+      }
+
+      .button {
+        background: var(--onyx);
+        color: var(--orange-yellow-crayola);
+        border: 1px solid var(--jet);
+        transition: var(--transition-1);
+      }
+
+      .button:hover {
+        background: var(--jet);
+      }
+
+      /* Update dialog styles */
+      .repo-dialog-content {
+        background: var(--eerie-black-2);
+        border: 1px solid var(--jet);
+        color: var(--light-gray);
+      }
+
+      .clone-content {
+        background: var(--onyx);
+      }
+
+      .clone-url {
+        color: var(--light-gray);
+      }
+
+      /* Update code viewer styles */
+      pre[class*="language-"] {
+        background: var(--onyx) !important;
+      }
+
+      .file-header {
+        background: var(--eerie-black-1);
+        color: var(--light-gray);
+        border-color: var(--jet);
+      }
+
+      /* File path/breadcrumb styling */
+      .file-header {
+        position: sticky;
+        top: 0;
+        background: var(--eerie-black-1);
+        padding: 1rem;
+        border-bottom: 1px solid var(--jet);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--light-gray);
+      }
+
+      .file-path-separator {
+        color: var(--light-gray-70);
+        opacity: 0.7;
+        margin: 0 0.25rem;
+      }
+
+      .file-header button {
+        color: var(--light-gray);
+        transition: color 0.2s;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+      }
+
+      .file-header button:hover {
+        color: var(--orange-yellow-crayola);
+        background: var(--onyx);
+      }
+
+      .file-header span:last-child {
+        color: var(--orange-yellow-crayola);
+      }
+
+      /* Button styling */
+      .button-action {
+        background: var(--onyx);
+        color: var(--light-gray);
+        padding: 0.75rem 1.5rem;
+        border-radius: 14px;
+        border: 1px solid var(--jet);
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .button-action:hover {
+        background: var(--jet);
+        color: var(--orange-yellow-crayola);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-2);
+      }
+
+      /* Update repository display function */
+      function displayRepositories(repos) {
+        const projectsGrid = document.getElementById("projectsGrid");
+        projectsGrid.innerHTML = repos.map(repo => `
+            <div class="card">
+                <div class="flex gap-3">
+                    <button onclick="showRepoDialog('${repo.name}')" 
+                        class="button-action flex-1">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        View Code
+                    </button>
+                    ${repo.homepage ? `
+                        <a href="${repo.homepage}" target="_blank" 
+                            class="button-action flex-1">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    ` : `
+                        <a href="${repo.html_url}" target="_blank" 
+                            class="button-action flex-1">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    `}
+                </div>
+            </div>
+        `).join("");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gradient">My Projects</h1>
+        <div class="flex gap-2">
+          <button class="button button-outline" id="newestBtn">
+          </button>
+          <button class="button button-outline" id="oldestBtn">
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="projectsGrid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Projects will be dynamically inserted here -->
+        <div class="flex items-center justify-center p-8">
+          <div
+            class="loader w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full"
+          ></div>
+        </div>
+      </div>
+
+      <footer class="mt-12 pb-6 text-center text-gray-600 border-t pt-6">
+        <p>© <span id="currentYear"></span> All Rights Reserved</p>
+        <p class="text-sm mt-2">Built with ❤️ using GitHub API</p>
+      </footer>
+    </div>
+
+    <script>
+      // Configuration
+      const GITHUB_USERNAME = "ahkamboh"; // Replace with your GitHub username
+      const GITHUB_TOKEN = ""; // Your GitHub token (optional)
+
+      // Update current year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Fetch repositories
+      async function fetchRepositories() {
+        try {
+          const headers = {
+            Accept: "application/vnd.github.v3+json",
+          };
+
+          if (GITHUB_TOKEN) {
+            headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
+          }
+
+          const response = await fetch(
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=created`,
+            {
+              headers,
+            }
+          );
+          const repos = await response.json();
+          displayRepositories(repos);
+        } catch (error) {
+          console.error("Error fetching repositories:", error);
+          document.getElementById("projectsGrid").innerHTML = `
+                    <div class="col-span-full text-center text-red-600">
+                        Error loading repositories. Please try again later.
+                    </div>
+                `;
+        }
+      }
+
+      // Display repositories
+      function displayRepositories(repos) {
+        const projectsGrid = document.getElementById("projectsGrid");
+        projectsGrid.innerHTML = repos.map(repo => `
+            <div class="card" style="background: var(--eerie-black-1); border: 1px solid var(--jet); border-radius: 20px; padding: 1.5rem;">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h2 class="text-xl font-semibold" style="color: var(--orange-yellow-crayola)">
+                            ${repo.name}
+                        </h2>
+                        <p class="mt-3 mb-6" style="color: var(--light-gray)">
+                            ${repo.description || "No description available"}
+                        </p>
+                    </div>
+                    <img src="${repo.owner.avatar_url}" alt="Owner" class="w-10 h-10 rounded-full">
+                </div>
+                
+                <div class="flex items-center gap-4 mb-6">
+                    ${repo.language ? `
+                        <span class="flex items-center text-sm">
+                            <span class="inline-block w-2.5 h-2.5 rounded-full ${
+                                repo.language === "TypeScript" ? "bg-blue-400" :
+                                repo.language === "Python" ? "bg-yellow-400" :
+                                "bg-gray-400"
+                            } mr-2"></span>
+                            ${repo.language}
+                        </span>
+                    ` : ""}
+                    <span class="flex items-center text-sm text-gray-600">
+                        <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        ${repo.stargazers_count}
+                    </span>
+                    <span class="flex items-center text-sm text-gray-600">
+             <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="18" r="3"></circle>
+    <circle cx="6" cy="6" r="3"></circle>
+    <circle cx="18" cy="6" r="3"></circle>
+    <path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path>
+    <path d="M12 12v3"></path>
+</svg>
+                        ${repo.forks_count}
+                    </span>
+                </div>
+
+                <div class="flex gap-3">
+                    <button onclick="showRepoDialog('${repo.name}')" 
+                        class="button-action flex-1">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        View Code
+                    </button>
+                    ${repo.homepage ? `
+                        <a href="${repo.homepage}" target="_blank" 
+                            class="button-action flex-1">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    ` : `
+                        <a href="${repo.html_url}" target="_blank" 
+                            class="button-action flex-1">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    `}
+                </div>
+
+                <div class="text-xs text-gray-500 mt-4">
+                    <p>Created: ${new Date(repo.created_at).toLocaleDateString()}</p>
+                    <p>Updated: ${new Date(repo.updated_at).toLocaleDateString()}</p>
+                </div>
+            </div>
+        `).join("");
+      }
+
+      // Sort repositories
+      document.getElementById("newestBtn").addEventListener("click", () => {
+        const projectsGrid = document.getElementById("projectsGrid");
+        const projects = Array.from(projectsGrid.children);
+        projects.sort((a, b) => {
+          const dateA = new Date(
+            a.querySelector("[data-created]")?.dataset.created || ""
+          );
+          const dateB = new Date(
+            b.querySelector("[data-created]")?.dataset.created || ""
+          );
+          return dateB - dateA;
+        });
+        projectsGrid.innerHTML = "";
+        projects.forEach((project) => projectsGrid.appendChild(project));
+      });
+
+      document.getElementById("oldestBtn").addEventListener("click", () => {
+        const projectsGrid = document.getElementById("projectsGrid");
+        const projects = Array.from(projectsGrid.children);
+        projects.sort((a, b) => {
+          const dateA = new Date(
+            a.querySelector("[data-created]")?.dataset.created || ""
+          );
+          const dateB = new Date(
+            b.querySelector("[data-created]")?.dataset.created || ""
+          );
+          return dateA - dateB;
+        });
+        projectsGrid.innerHTML = "";
+        projects.forEach((project) => projectsGrid.appendChild(project));
+      });
+
+      // Initialize
+      fetchRepositories();
+
+      // Add these new functions
+      function showRepoDialog(repoName) {
+        const dialog = document.createElement("div");
+        dialog.className = "repo-dialog";
+        dialog.id = "repoDialog";
+
+        dialog.innerHTML = `
+                <div class="repo-dialog-content">
+                    <div class="repo-header">
+                        <h2 class="text-xl font-bold">${repoName}</h2>
+                        <button onclick="closeRepoDialog()" class="text-gray-500 hover:text-gray-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="clone-options">
+                        <div class="clone-tabs">
+                            <button class="clone-tab active" onclick="switchCloneTab(this, 'https')">HTTPS</button>
+                            <button class="clone-tab" onclick="switchCloneTab(this, 'ssh')">SSH</button>
+                            <button class="clone-tab" onclick="switchCloneTab(this, 'cli')">GitHub CLI</button>
+                        </div>
+                        <div class="clone-content">
+                            <input type="text" class="clone-url" id="cloneUrl" 
+                                value="https://github.com/ahkamboh/${repoName}.git" readonly>
+                            <button onclick="copyCloneUrl()" class="button">
+                                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8 17.929H6c-1.105 0-2-.912-2-2.036V5.036C4 3.912 4.895 3 6 3h8c1.105 0 2 .912 2 2.036v1.866m-6 .17h8c1.105 0 2 .91 2 2.035v10.857C20 21.088 19.105 22 18 22h-8c-1.105 0-2-.911-2-2.036V9.107c0-1.124.895-2.036 2-2.036z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="repo-content" id="repoContent">
+                        <div class="flex items-center justify-center p-8">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+        document.body.appendChild(dialog);
+        dialog.style.display = "block";
+
+        fetchRepoContents(repoName);
+      }
+
+      function closeRepoDialog() {
+        const dialog = document.getElementById("repoDialog");
+        if (dialog) {
+          dialog.remove();
+        }
+      }
+
+      function switchCloneTab(element, type) {
+        // Remove active class from all tabs
+        document.querySelectorAll(".clone-tab").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Add active class to clicked tab
+        element.classList.add("active");
+
+        // Update clone URL based on type
+        const urlInput = document.getElementById("cloneUrl");
+        const repoName = urlInput.value.split("/").pop().replace(".git", "");
+
+        switch (type) {
+          case "https":
+            urlInput.value = `https://github.com/ahkamboh/${repoName}.git`;
+            break;
+          case "ssh":
+            urlInput.value = `git@github.com:ahkamboh/${repoName}.git`;
+            break;
+          case "cli":
+            urlInput.value = `gh repo clone ahkamboh/${repoName}`;
+            break;
+        }
+      }
+
+      async function copyCloneUrl() {
+        const urlInput = document.getElementById("cloneUrl");
+        await navigator.clipboard.writeText(urlInput.value);
+
+        // Show toast notification
+        const toast = document.createElement("div");
+        toast.className =
+          "fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-md";
+        toast.textContent = "URL copied to clipboard!";
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+          toast.remove();
+        }, 2000);
+      }
+
+      async function fetchRepoContents(repoName, path = "") {
+        const repoContent = document.getElementById("repoContent");
+        repoContent.innerHTML =
+          '<div class="flex items-center justify-center p-8"><div class="loader"></div></div>';
+
+        try {
+          const headers = {
+            Accept: "application/vnd.github.v3+json",
+          };
+
+          if (GITHUB_TOKEN) {
+            headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
+          }
+
+          const response = await fetch(
+            `https://api.github.com/repos/${GITHUB_USERNAME}/${repoName}/contents/${path}`,
+            {
+              headers,
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("Failed to fetch repository contents");
+          }
+
+          const contents = await response.json();
+
+          repoContent.innerHTML = `
+                    ${
+                      path
+                        ? `
+                        <button onclick="navigateBack('${repoName}', '${path}')" class="button button-outline mb-4">
+                            <svg class="w-4 h-4 mr-2 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                            Back
+                        </button>
+                    `
+                        : ""
+                    }
+                    <div class="space-y-1">
+                        ${
+                          Array.isArray(contents)
+                            ? contents
+                                .map(
+                                  (item) => `
+                            <div class="file-item" onclick="${
+                              item.type === "dir"
+                                ? `navigateToFolder('${repoName}', '${path}${item.name}/')`
+                                : `viewFile('${item.download_url}', '${item.name}', '${repoName}', '${path}')`
+                            }">
+                                <span class="file-icon">
+                                    ${
+                                      item.type === "dir"
+                                        ? `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                                           </svg>`
+                                        : `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                           </svg>`
+                                    }
+                                </span>
+                                ${item.name}
+                            </div>
+                        `
+                                )
+                                .join("")
+                            : "No contents found"
+                        }
+                    </div>
+                `;
+        } catch (error) {
+          console.error("Error fetching repository contents:", error);
+          repoContent.innerHTML = `
+                    <div class="text-red-500 text-center p-4">
+                        Error loading repository contents. Please try again later.
+                    </div>
+                `;
+        }
+      }
+
+      function navigateToFolder(repoName, path) {
+        fetchRepoContents(repoName, path);
+      }
+
+      function navigateBack(repoName, currentPath) {
+        const newPath = currentPath.split("/").slice(0, -2).join("/");
+        fetchRepoContents(repoName, newPath);
+      }
+
+      async function viewFile(url, fileName, repoName, path = "") {
+        if (!url || !fileName || !repoName) {
+          console.error("Missing required parameters:", {
+            url,
+            fileName,
+            repoName,
+          });
+          return;
+        }
+
+        const repoContent = document.getElementById("repoContent");
+        repoContent.innerHTML =
+          '<div class="flex items-center justify-center p-8"><div class="loader"></div></div>';
+
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("Failed to fetch file content");
+          const content = await response.text();
+          
+          const isImage = fileName.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i);
+          const fileExtension = fileName.split('.').pop()?.toLowerCase();
+          
+          // Updated breadcrumbs HTML
+          const pathParts = path.split('/').filter(Boolean);
+          const breadcrumbs = `
+              <div class="file-header">
+                  <button onclick="fetchRepoContents('${repoName}')" class="hover:text-blue-600">
+                      ${repoName}
+                  </button>
+                  ${pathParts.map((part, index) => `
+                      <span class="file-path-separator">/</span>
+                      <button 
+                          onclick="fetchRepoContents('${repoName}', '${pathParts.slice(0, index + 1).join('/')}/')"
+                      >
+                          ${part}
+                      </button>
+                  `).join('')}
+                  <span class="file-path-separator">/</span>
+                  <span>${fileName}</span>
+              </div>
+          `;
+
+          if (isImage) {
+            repoContent.innerHTML = `
+                ${breadcrumbs}
+                <div class="p-4">
+                    <img src="${url}" alt="${fileName}" class="max-w-full h-auto" />
+                </div>
+            `;
+          } else {
+            const escapedContent = content
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+
+            repoContent.innerHTML = `
+                ${breadcrumbs}
+                <div class="p-4">
+                    <pre class="line-numbers"><code class="language-${fileExtension}">${escapedContent}</code></pre>
+                </div>
+            `;
+
+            // Re-initialize Prism
+            Prism.highlightAllUnder(repoContent);
+          }
+        } catch (error) {
+          console.error('Error fetching file:', error);
+          repoContent.innerHTML = `
+              ${breadcrumbs}
+              <div class="text-red-500 text-center p-4">
+                  Error loading file contents. Please try again later.
+              </div>
+          `;
+        }
+      }
+    </script>
+  </body>
+</html>
