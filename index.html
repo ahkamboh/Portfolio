@@ -4,42 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:site_name" content="alihamzakamboh.com">
-  <meta property="og:title" content="Ali Hamza Kamboh">
-  <meta property="og:description"
-    content="Seasoned Programmer Ali Hamza Kamboh, known as ahkamboh, a Software Engineer and AI Product Developer with over 4 years of experience in web and app development.">
-  <meta property="og:image"
-    content="https://avatars.githubusercontent.com/u/123060177">
-  <meta property="og:type" content="website" />
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
-  <meta property="og:url" content="https://www.alihamzakamboh.com">
+  
+  <!-- Primary Meta Tags -->
+  <title>Ali Hamza Kamboh — Software Engineer & AI Systems Architect</title>
+  <meta name="title" content="Ali Hamza Kamboh — Software Engineer & AI Systems Architect">
+  <meta name="description" content="Agentic AI systems engineering and task-driven automation for data-intensive, decision-critical products built to operate at scale.">
+  <meta name="keywords" content="Ali Hamza Kamboh, ahkamboh, Software Engineer, AI Systems Architect, Agentic AI, Automation, Machine Learning, Python, TypeScript, Next.js, Open Source, NotebookLlama, Developer Tools, Pakistan">
+  <meta name="author" content="Ali Hamza Kamboh">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://alihamzakamboh.com">
-  <meta name="description" content="Seasoned Programmer Ali Hamza Kamboh, known as ahkamboh, a Software Engineer and AI Product Developer with over 4 years of experience in web and app development.">
-  <meta name="keywords" content="personal portfolio ali hamza kamboh ,Ali hamza kamboh blog, thoughts, ideas, python , CSS , html, poetry, ahkamboh , Kamboh , Pakistan , javascript, developer, website, web development, App Development , Ali Hamza Kamboh, Ror, Ruby on rails , Ror Development" >
-  <title>Ali Hamza Kamboh</title>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alihamzakamboh.com">
+  <meta property="og:site_name" content="Ali Hamza Kamboh">
+  <meta property="og:title" content="Ali Hamza Kamboh — Software Engineer & AI Systems Architect">
+  <meta property="og:description" content="Agentic AI systems engineering and task-driven automation for data-intensive, decision-critical products built to operate at scale.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/123060177?v=4">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://alihamzakamboh.com">
+  <meta name="twitter:title" content="Ali Hamza Kamboh — Software Engineer & AI Systems Architect">
+  <meta name="twitter:description" content="Agentic AI systems engineering and task-driven automation for data-intensive, decision-critical products built to operate at scale.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/123060177?v=4">
+  <meta name="twitter:creator" content="@alihamzakambohh">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1e1e1f">
+  <meta name="msapplication-TileColor" content="#1e1e1f">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/123060177?v=4">
+  <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/123060177?v=4">
+  
+  <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <!-- Google tag (gtag.js) -->
+  
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81FQX7FVJT"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
-
     gtag('config', 'G-81FQX7FVJT');
   </script>
 
+  <!-- EmailJS Init -->
   <script type="text/javascript">
       (function() {
           emailjs.init("OjYM5kbk8EDmHuZXc"); 
       })();
   </script>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="assets/images/ah-icon.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -54,13 +73,512 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Terminal Intro Styles */
+    .terminal-intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #0a0a0a;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    
+    .terminal-intro.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    /* Sound Toggle Button */
+    .sound-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .sound-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.1);
+    }
+    
+    .sound-toggle svg {
+      width: 20px;
+      height: 20px;
+      fill: rgba(255, 255, 255, 0.6);
+      transition: fill 0.3s ease;
+    }
+    
+    .sound-toggle:hover svg {
+      fill: rgba(255, 255, 255, 0.9);
+    }
+    
+    .sound-toggle.active {
+      background: rgba(0, 255, 136, 0.15);
+      border-color: rgba(0, 255, 136, 0.3);
+    }
+    
+    .sound-toggle.active svg {
+      fill: #00ff88;
+    }
+    
+    .sound-toggle .sound-on,
+    .sound-toggle .sound-off {
+      position: absolute;
+    }
+    
+    .sound-toggle .sound-on { display: none; }
+    .sound-toggle .sound-off { display: block; }
+    
+    .sound-toggle.active .sound-on { display: block; }
+    .sound-toggle.active .sound-off { display: none; }
+    
+    .sound-toggle.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.8);
+    }
+    
+    /* GitHub Activity Graph */
+    .github-activity {
+      margin-bottom: 30px;
+    }
+    
+    .github-activity-title {
+      margin-bottom: 20px;
+      color: var(--white-2);
+    }
+    
+    .github-graph-container {
+      background: var(--eerie-black-2);
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid var(--jet);
+    }
+    
+    .github-chart-img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .github-chart-img:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+    
+    /* Focus Card Icons */
+    .focus-icon {
+      width: 26px;
+      height: 26px;
+      color: #f5c76a;
+      margin-bottom: 10px;
+    }
+    
+    /* Blog styles moved to style.css */
+    
+    /* Blog Post View */
+    .blog-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--onyx);
+      border: 1px solid var(--jet);
+      color: var(--light-gray);
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 25px;
+      transition: all 0.3s ease;
+    }
+    
+    .blog-back-btn:hover {
+      background: var(--orange-yellow-crayola);
+      color: var(--smoky-black);
+      border-color: var(--orange-yellow-crayola);
+    }
+    
+    .blog-back-btn ion-icon {
+      font-size: 18px;
+    }
+    
+    .blog-post-body {
+      background: var(--eerie-black-2);
+      border-radius: 14px;
+      padding: 30px;
+      border: 1px solid var(--jet);
+    }
+    
+    .blog-post-body h1 {
+      font-size: 28px;
+      color: var(--white-2);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    
+    .blog-post-body h2 {
+      font-size: 22px;
+      color: var(--white-2);
+      margin: 25px 0 15px;
+    }
+    
+    .blog-post-body h3 {
+      font-size: 18px;
+      color: var(--white-2);
+      margin: 20px 0 10px;
+    }
+    
+    .blog-post-body p {
+      font-size: 15px;
+      color: var(--light-gray);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    
+    .blog-post-body code {
+      background: var(--onyx);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      color: var(--orange-yellow-crayola);
+    }
+    
+    .blog-post-body pre {
+      background: var(--onyx);
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    
+    .blog-post-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--light-gray);
+    }
+    
+    .blog-post-body ul, .blog-post-body ol {
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+    
+    .blog-post-body li {
+      color: var(--light-gray);
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+    
+    .blog-post-body a {
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    
+    .blog-post-body a:hover {
+      text-decoration: underline;
+    }
+    
+    .blog-post-body blockquote {
+      border-left: 3px solid var(--orange-yellow-crayola);
+      padding-left: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: var(--light-gray-70);
+    }
+    
+    .blog-post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .blog-post-body th, .blog-post-body td {
+      border: 1px solid var(--jet);
+      padding: 12px;
+      text-align: left;
+      color: var(--light-gray);
+    }
+    
+    .blog-post-body th {
+      background: var(--onyx);
+      color: var(--white-2);
+    }
+    
+    .blog-post-body img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    
+    .blog-post-body hr {
+      border: none;
+      border-top: 1px solid var(--jet);
+      margin: 30px 0;
+    }
+    
+    .blog-post-body em {
+      color: var(--light-gray-70);
+    }
+    
+    .github-stats {
+      display: flex;
+      gap: 20px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--light-gray);
+    }
+    
+    .stat-value {
+      color: var(--white-2);
+      font-weight: 600;
+    }
+    
+    
+    .terminal-container {
+      width: min(90vw, 700px);
+      background: #0d0d0d;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1a1a1a;
+    }
+    
+    .terminal-header {
+      background: linear-gradient(180deg, #2a2a2a 0%, #1f1f1f 100%);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #0a0a0a;
+    }
+    
+    .terminal-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    
+    .terminal-btn.red { background: #ff5f56; }
+    .terminal-btn.yellow { background: #ffbd2e; }
+    .terminal-btn.green { background: #27ca40; }
+    
+    .terminal-title {
+      flex: 1;
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      margin-right: 52px;
+    }
+    
+    .terminal-body {
+      padding: 30px;
+      min-height: 280px;
+      position: relative;
+    }
+    
+    .terminal-body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 255, 136, 0.01) 2px,
+        rgba(0, 255, 136, 0.01) 4px
+      );
+      pointer-events: none;
+    }
+    
+    .terminal-line {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #00ff88;
+      margin-bottom: 8px;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+    }
+    
+    .terminal-line.command {
+      color: #888;
+    }
+    
+    .terminal-line.command::before {
+      content: '$ ';
+      color: #00ff88;
+    }
+    
+    .terminal-line.output {
+      color: #e0e0e0;
+    }
+    
+    .terminal-line.highlight {
+      color: #ffd700;
+    }
+    
+    .terminal-line.dim {
+      color: #555;
+    }
+    
+    .typing-cursor {
+      display: inline-block;
+      width: 10px;
+      height: 18px;
+      background: #00ff88;
+      margin-left: 2px;
+      animation: cursor-blink 1s step-end infinite;
+      vertical-align: middle;
+    }
+    
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    
+    .terminal-progress {
+      display: none;
+      margin-top: 20px;
+    }
+    
+    .terminal-progress.active {
+      display: block;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 4px;
+      background: #1a1a1a;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00ff88, #ffd700);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    
+    .progress-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #555;
+      margin-top: 8px;
+      text-align: right;
+    }
+    
+    /* Disable ALL scrolling during intro */
+    body.intro-active {
+      overflow: hidden !important;
+      position: fixed !important;
+      width: 100% !important;
+      height: 100% !important;
+      touch-action: none !important;
+    }
+    
+    /* Hide main content until intro is done */
+    body.intro-active main,
+    body.intro-active .profile-card {
+      opacity: 0;
+    }
+    
+    body.intro-complete main,
+    body.intro-complete .profile-card {
+      opacity: 1;
+      transition: opacity 0.5s ease 0.3s;
+    }
+    
+    /* Hide intro instantly when skipped (no flash) */
+    html.skip-intro .terminal-intro,
+    html.skip-intro .sound-toggle,
+    body.skip-intro .terminal-intro,
+    body.skip-intro .sound-toggle {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+    
+    html.skip-intro body,
+    body.skip-intro {
+      overflow-y: auto !important;
+    }
+  </style>
+  
+  <!-- Check intro cooldown BEFORE page renders to prevent flash -->
+  <script>
+    (function() {
+      var COOLDOWN = 5 * 60 * 1000;
+      var lastShown = localStorage.getItem('portfolio_intro_shown');
+      if (lastShown && (Date.now() - parseInt(lastShown, 10)) < COOLDOWN) {
+        document.documentElement.classList.add('skip-intro');
+      }
+    })();
+  </script>
 </head>
 
-<body>
-<!--   Loader screen  -->
- <div class="loaderbg">
-      <img src="assets/images/loader.gif" alt="loader logo">
+<body class="intro-active">
+
+<!-- Terminal Intro -->
+<div class="terminal-intro" id="terminalIntro">
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <div class="terminal-btn red"></div>
+      <div class="terminal-btn yellow"></div>
+      <div class="terminal-btn green"></div>
+      <div class="terminal-title">ahkamboh@portfolio ~ </div>
+    </div>
+    <div class="terminal-body">
+      <div id="terminalOutput"></div>
+      <div class="terminal-progress" id="terminalProgress">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text" id="progressText">Initializing...</div>
+      </div>
+    </div>
+  </div>
  </div>
+
+<!-- Sound Toggle Button -->
+<button class="sound-toggle" id="soundToggle" title="Toggle Sound">
+  <svg class="sound-on" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+  </svg>
+  <svg class="sound-off" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+  </svg>
+</button>
 
   <!--
     - #MAIN
@@ -89,7 +607,7 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Ali Hamza Kamboh" translate="no">ahkamboh</h1>
+          <h1 class="name" title="Ali Hamza Kamboh" translate="no">Ali Hamza Kamboh</h1>
           <p class="title"></p>
         </div>
 
@@ -124,42 +642,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+923176364957" class="contact-link">+92(317)-6364957</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-04-05">Safar 3, 1424h</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Rachand,Sheikhpura,
-                Punjab,Pakistan</address>
+              <address>Based in Pakistan</address>
             </div>
 
           </li>
@@ -179,8 +668,10 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.instagram.com/ah_kamboh/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://x.com/alihamzakambohh" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </a>
           </li>
 
@@ -208,7 +699,7 @@
             <button class="navbar-link  active" data-nav-link translate="no">About</button>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" style="display: none;">
             <button class="navbar-link" data-nav-link translate="no">Resume</button>
           </li>
 
@@ -217,6 +708,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link translate="no">Blog</button>
+          </li>
+
+          <li class="navbar-item" style="display: none;">
             <button class="navbar-link" data-nav-link translate="no">Poetry</button>
           </li>
 
@@ -242,11 +737,29 @@
           <h2 class="h2 article-title">About me</h2>
         </header>
         <section class="about-text">
-        <p> Meet <strong>Ali Hamza Kamboh</strong>, Founder and CTO of Xaibridge, a <strong>Software Engineer, AI Product Developer, and Entrepreneur</strong> with over 4 years of experience in web and app development. Passionate about transforming complex problems into simple, beautiful, and intuitive solutions, I specialize in driving innovation through intelligent automation and cutting-edge technologies. </p>
-
-        <p> If you're looking for someone who excels in building <strong>AI-driven applications, Web3 solutions, and automated platforms</strong>, look no further. I focus on creating products that are not only functional and user-friendly but also visually appealing and innovative. My expertise in AI agents, computer vision, and multi-component platforms (MCPs) ensures your business stays ahead of the curve. In just <strong>30 days</strong>, I can help you launch your <strong>Minimum Viable Product (MVP)</strong> and streamline operations to drive profitability. Check out my current projects to see the transformative work I’ve been doing at <a href="https://xaibridge.com" target="_blank"><strong>Xaibridge</strong></a>. </p>
-        
-        
+          <style>
+            .ahbytes-highlight {
+              color: #FFD600;
+              font-weight: bold;
+              text-decoration: none;
+              cursor: pointer;
+              transition: color 0.2s, text-decoration 0.2s;
+              display: inline;
+            }
+            .ahbytes-highlight:hover {
+              color: #fff;
+              text-decoration: underline;
+            }
+          </style>
+          <p>
+            Hi, I'm <strong class="ahbytes-highlight" style="font-size: 1.1em;">Ali Hamza Kamboh</strong>.
+          </p>
+          <p>
+            I build AI-driven systems that reduce complexity and operate reliably under real-world constraints. My focus is agentic automation and data-intensive systems where clarity, scale, and long-term architecture matter.
+          </p>
+          <p>
+            Founder and CTO at <span class="ahbytes-highlight" onclick="window.open('https://xaibridge.com', '_blank')">Xaibridge</span>.
+          </p>
         </section>
 
 
@@ -256,22 +769,26 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Current Focus</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7" rx="1"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1"/>
+                  <circle cx="17.5" cy="17.5" r="3.5"/>
+                </svg>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web3 Development</h4>
+                <h4 class="h4 service-item-title">AI Systems Engineering</h4>
 
                 <p class="service-item-text">
-                  End-to-end development with modern technologies, creating seamless and scalable web solutions.
+                  Designing and building intelligent software systems for complex, data-heavy workflows.
                 </p>
               </div>
 
@@ -280,14 +797,24 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"/>
+                  <path d="M12 18v4"/>
+                  <path d="M4.93 4.93l2.83 2.83"/>
+                  <path d="M16.24 16.24l2.83 2.83"/>
+                  <path d="M2 12h4"/>
+                  <path d="M18 12h4"/>
+                  <path d="M4.93 19.07l2.83-2.83"/>
+                  <path d="M16.24 7.76l2.83-2.83"/>
+                  <circle cx="12" cy="12" r="4"/>
+                </svg>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI/ML Development</h4>
+                <h4 class="h4 service-item-title">Automation & Intelligence</h4>
 
                 <p class="service-item-text">
-                  Leveraging AI/ML to enhance user experiences and automate processes.
+                  Applying machine intelligence to reduce manual effort and improve decision-making at scale.
                 </p>
               </div>
 
@@ -296,14 +823,18 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"/>
+                  <path d="M7 16l4-4 4 4 6-6"/>
+                  <circle cx="21" cy="10" r="1"/>
+                </svg>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Compter Vision</h4>
+                <h4 class="h4 service-item-title">Applied Machine Learning</h4>
 
                 <p class="service-item-text">   
-			High-quality development of Apps with advanced computer vision at the professional level.
+                  Working with real-world data where signal quality, accuracy, and reliability matter.
                 </p>
               </div>
 
@@ -312,14 +843,21 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="6" width="20" height="12" rx="2"/>
+                  <line x1="6" y1="10" x2="6" y2="14"/>
+                  <line x1="10" y1="10" x2="10" y2="14"/>
+                  <line x1="14" y1="10" x2="14" y2="14"/>
+                  <line x1="18" y1="10" x2="18" y2="14"/>
+                  <path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
+                </svg>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">MCPs AI Agents</h4>
+                <h4 class="h4 service-item-title">Multi-Component Platforms</h4>
 
                 <p class="service-item-text">
-                  Expert development of MCPs and AI agents for advanced solutions.
+                  Designing interconnected systems that remain maintainable, adaptable, and simple to operate.
                 </p>
               </div>
 
@@ -332,102 +870,28 @@
 
 
         <!--
-          - testimonials
+          - GitHub Activity
         -->
 
-        <section class="testimonials">
+        <section class="github-activity">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 github-activity-title">GitHub Activity</h3>
 
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/avatar-1.png" alt="Abu Zar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title> Abdul Hannan 
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    So, among all the Technology developers I've seen in the past 3 to 4 years, you are included among those whose designing skills are the best, whose color selection is the best, and whose theme building is the best. Your design is very good.👏🏻
-                    <br>
-                    <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7221504482642165760?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7221504482642165760%2C7221513754906140673%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287221513754906140673%2Curn%3Ali%3AugcPost%3A7221504482642165760%29" class="social-link" target="_blank">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </p>
+          <div class="github-graph-container">
+            <a href="https://github.com/ahkamboh" target="_blank" rel="noopener noreferrer">
+              <img src="https://ghchart.rshah.org/39d353/ahkamboh" alt="GitHub Contribution Graph" class="github-chart-img" />
+            </a>
+            <div class="github-stats" id="github-stats"></div>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/avatar-2.png" alt="Hilma" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Halima</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Ali's AI integrations transformed our application, adding incredible value and efficiency. His technical prowess and innovative approach exceeded our expectations
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/avatar-3.png" alt="Kashmala" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kashmala</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Working with ahkamboh was a breeze! They crafted an attractive, intuitive website that perfectly captured our message and brand identity.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/avatar-4.png" alt="Abu bakar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Abu Bakar</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    ahkamboh's web development skills are unparalleled. Our site not only looks stunning but also ensures a seamless and enjoyable user experience
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
 
         </section>
 
 
         <!--
-          - testimonials modal
+          - hidden modal (keeping structure)
         -->
 
-        <div class="modal-container" data-modal-container>
+        <div class="modal-container" data-modal-container style="display: none;">
 
           <div class="overlay" data-overlay></div>
 
@@ -439,7 +903,7 @@
 
             <div class="modal-content">
               <figure class=" modal-avatar-box">
-                <img src="assets/images/avatar-1.png" alt="Mehmat Ali" width="80" data-modal-img>
+                <img src="assets/images/avatar-1.png" alt="" width="80" data-modal-img>
               </figure>
 
               <img src="assets/images/icon-quote.svg" alt="quote icon">
@@ -447,9 +911,9 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Mehmat Ali</h4>
+              <h4 class="h3 modal-title" data-modal-title></h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+              <time datetime="2021-06-14"></time>
 
               <div data-modal-text>
                 <p>
@@ -464,56 +928,6 @@
         </div>
 
 
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
 
 
@@ -524,7 +938,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="resume" style="display: none;">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -934,355 +1348,331 @@
 
         <section class="projects">
 
-          <ul class="filter-list" translate="no">
-
+          <!-- GitHub Language Filter -->
+          <ul class="filter-list" translate="no" id="github-filter-list">
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn data-lang="all">All</button>
             </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-            <a href="blog"> <li class="filter-item">
-              <button id="Blog-btn">Blog</button>
-            </li></a>
-            <a href="projects.html"> <li class="filter-item">
-              <button id="Blog-btn">Latest Projects</button>
-            </li></a>
+            <!-- Language filters will be populated dynamically -->
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
+              <div class="select-value" data-selecct-value>Select language</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
-            <ul class="select-list">
-
+            <ul class="select-list" id="github-select-list">
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item data-lang="all">All</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-              <li class="select-item">
-                <a href="projects.html"> 
-                  <button id="Blog-btn">Latest Projects</button>
-                </li></a>
-              </li>
+              <!-- Language options will be populated dynamically -->
             </ul>
-
           </div>
 
-          <ul class="project-list">
-
-
-            <li title="AI Resume Builder"  class="project-item-1 project-item active" data-filter-item
-            data-category="web development">
-            <a href="https://ahkamboh.me/" >
-              <figure class="project-img project-img-1">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+          <!-- Loading State -->
+          <div id="github-loading">
+            <ion-icon name="sync-outline" style="font-size: 2.5rem; animation: spin 1s linear infinite;"></ion-icon>
+            <p>Loading GitHub repositories...</p>
                 </div>
-                <img src="assets/images/ai-resume.webp" alt="AI Resume Builder">
-              </figure>
 
-              <h3 class="project-title">AI Resume Builder</h3>
-              <p class="project-category">Web App</p>
-
-            </a>
-          </li>
-
-            <li  class="project-item-1 project-item active" data-filter-item
-              data-category="web development">
-              <a href="https://codeeditor.alihamzakamboh.com/" >
-                <figure class="project-img project-img-1">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/Code Editor.webp" alt="Code Edito">
-                </figure>
-
-                <h3 class="project-title">Code Editor</h3>
-                <p class="project-category">Web App</p>
-
-              </a>
-            </li>
-
-
-            <li title="Easy Doc powered by Ai"  class="project-item-1 project-item active" data-filter-item
-            data-category="web development">
-            <a href="https://easydoc.alihamzakamboh.com/" >
-              <figure class="project-img project-img-1">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="assets/images/easy-doc.webp" alt="Easy Doc powered by Ai">
-              </figure>
-
-              <h3 class="project-title">Easy Doc</h3>
-              <p class="project-category">Web App</p>
-
-            </a>
-          </li>
-
-          <li title="Recommendation Letter Generater" class="project-item-1 project-item active" data-filter-item
-          data-category="web development">
-          <a href="https://ahkamboh.me/recmnd_letter/index" >
-            <figure class="project-img project-img-1">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-              <img src="assets/images/letter-gen.webp" alt="Recommendation Letter Generater">
-            </figure>
-
-            <h3 class="project-title">Recommendation Letter Generater</h3>
-            <p class="project-category">Web App</p>
-
-          </a>
-        </li>
-            <li  class="project-item-2 project-item active" data-filter-item
-              data-category="web development">
-              <a href="https://github.com/ahkamboh/wikipedia-assistant-" >
-                <figure class="project-img project-img-2">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Wikipedia.png">
-                </figure>
-
-                <h3 class="project-title">Ai Assistant
-                </h3>
-
-                <p class="project-category"> Wikipedia
-                </p>
-
-              </a>
-            </li>
-
-      
-            <li  class="project-item-3 project-item active" data-filter-item
-              data-category="web development">
-              <a href="https://ahkamboh.github.io/Terzo.ai" >
-
-                <figure class="project-img project-img-3">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Terzo.ai.webp">
-                </figure>
-
-                <h3 class="project-title">Terzo.io</h3>
-                <p class="project-category">Tailwind App</p>
-
-              </a>
-            </li>
-    
-            <li  class="project-item-4 project-item active" data-filter-item
-              data-category="web development">
-              <a  href="https://ahkamboh.github.io/horizontal-scrolling-website" >
-
-                <figure class="project-img project-img-4">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Horizontal Portfolio.png">
-                </figure>
-
-                <h3 class="project-title">Horizontal-Scrolling</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-            <li  class="project-item-5 project-item active" data-filter-item
-              data-category="web design">
-              <a href="https://applyaces.com/" >
-
-                <figure class="project-img project-img-5">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/applyace.png">
-                </figure>
-
-                <h3 class="project-title">Applyace.ai</h3>
-                <p class="project-category">Fullstack AI Website</p>
-
-              </a>
-            </li>
-       
-            <li  class="project-item-6 project-item active" data-filter-item
-              data-category="web design">
-              <a href="https://ahkamboh.github.io/gradient-generator" >
-
-                <figure class="project-img project-img-6">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/Gradient.ai.webp">
-                </figure>
-
-                <h3 class="project-title">Gradient Generater</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item-3 project-item active" data-filter-item
-              data-category="web development">
-              <a href="https://ahkamboh.github.io/Text-Eidter-in-js" >
-
-                <figure class="project-img project-img-3">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Text Editor.webp">
-                </figure>
-
-                <h3 class="project-title">Text Editor</h3>
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-    
-            <li class="project-item-3 project-item active" data-filter-item
-              data-category="web development">
-              <a  href="https://ahkamboh.github.io/EducationHub/" >
-
-                <figure class="project-img project-img-3">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/LAS APP.webp">
-                </figure>
-
-                <h3 class="project-title">Educational App</h3>
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-      
-            <li  class="project-item-7 project-item active" data-filter-item
-              data-category="applications">
-              <a href="https://ahkamboh.github.io/Shoping-E-commerce-Webiste/" >
-
-                <figure class="project-img project-img-7">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Kaesh.pk.webp">
-                </figure>
-
-                <h3 class="project-title">E-Mobile</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-    
-            <li class="project-item-7 project-item active" data-filter-item
-              data-category="applications">
-              <a href="https://ahkamboh.github.io/Result-card-Generator/" >
-
-                <figure class="project-img project-img-7">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Result gen.webp">
-                </figure>
-
-                <h3 class="project-title">Result ai</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-           
-            <li class="project-item-8 project-item  active" data-filter-item
-              data-category="applications">
-              <a href="https://ahkamboh.github.io/horizontal-scrolling-website/" >
-
-                <figure class="project-img project-img-8">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Horizonatl web app.webp" >
-                </figure>
-
-                <h3 class="project-title">H-Mobile</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-        
-            <li  class="project-item-9  project-item active" data-filter-item
-              data-category="applications">
-              <a href="https://ahkamboh.github.io/Calculater-by-javascript/">
-
-                <figure class="project-img project-img-9">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/Calculater.webp">
-                </figure>
-
-                <h3 class="project-title">Calcuater</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-
-            </li>
-
+          <!-- GitHub Repos Container -->
+          <ul class="project-list" id="github-repos-list" style="display: none;">
+            <!-- Repos will be populated dynamically -->
           </ul>
-          <div style="display: flex; justify-content: center; gap: 1rem; text-align: center;" >
+
+          <div style="display: flex; justify-content: center; gap: 1rem; text-align: center; margin-top: 1rem;">
             <div id="code-btn" class="book-btn">
-            <a href="blog">Blog →</a>
-          </div>
-          <div id="code-btn" class="book-btn">
-            <a href="projects.html">Latest Projects →</a>
-          </div>  
-        </div>
+              <a href="https://github.com/ahkamboh?tab=repositories" target="_blank">View All on GitHub →</a>
+                  </div>
+                </div>
           <br>
         </section>
+
+        <style>
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        </style>
+
+        <script>
+          // GitHub Repos Integration
+          const GITHUB_USERNAME = 'ahkamboh';
+          const REPOS_PER_PAGE = 100;
+
+          // Language colors (GitHub style)
+          const langColors = {
+            'JavaScript': '#f1e05a',
+            'TypeScript': '#3178c6',
+            'Python': '#3572A5',
+            'HTML': '#e34c26',
+            'CSS': '#563d7c',
+            'Java': '#b07219',
+            'C++': '#f34b7d',
+            'C': '#555555',
+            'Ruby': '#701516',
+            'Go': '#00ADD8',
+            'Rust': '#dea584',
+            'PHP': '#4F5D95',
+            'Swift': '#F05138',
+            'Kotlin': '#A97BFF',
+            'Dart': '#00B4AB',
+            'Vue': '#41b883',
+            'Shell': '#89e051',
+            'Jupyter Notebook': '#DA5B0B',
+            'default': '#8b949e'
+          };
+
+          const CACHE_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
+
+          async function fetchGitHubRepos() {
+            // Check cache first
+            try {
+              const cached = localStorage.getItem('github_repos_cache');
+              if (cached) {
+                const { data, timestamp } = JSON.parse(cached);
+                const age = Date.now() - timestamp;
+                
+                // Use cache if less than 1 hour old
+                if (age < CACHE_DURATION) {
+                  console.log('Using cached GitHub repos (age:', Math.round(age / 60000), 'min)');
+                  return data;
+                }
+              }
+            } catch (e) { /* ignore cache errors */ }
+            
+            // Fetch fresh data from API
+            try {
+              console.log('Fetching fresh repos from GitHub API...');
+              const response = await fetch(
+                `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=${REPOS_PER_PAGE}&sort=updated&direction=desc`
+              );
+              
+              if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.message || 'Failed to fetch repos');
+              }
+              
+              const data = await response.json();
+              
+              // Cache the successful response
+              try {
+                localStorage.setItem('github_repos_cache', JSON.stringify({
+                  data: data,
+                  timestamp: Date.now()
+                }));
+                console.log('Cached', data.length, 'repos');
+              } catch (e) { /* ignore storage errors */ }
+              
+              return data;
+            } catch (error) {
+              console.error('API Error:', error.message);
+              
+              // Fallback to expired cache if available
+              try {
+                const cached = localStorage.getItem('github_repos_cache');
+                if (cached) {
+                  const { data, timestamp } = JSON.parse(cached);
+                  console.log('Using expired cache from:', new Date(timestamp).toLocaleString());
+                  return data;
+                }
+              } catch (e) { /* ignore */ }
+              
+              return [];
+            }
+          }
+
+          function getLanguageColor(lang) {
+            return langColors[lang] || langColors['default'];
+          }
+
+          function createRepoCard(repo) {
+            const lang = repo.language || 'Unknown';
+            const langColor = getLanguageColor(lang);
+            const description = repo.description ? repo.description.substring(0, 100) + (repo.description.length > 100 ? '...' : '') : '';
+            
+            return `
+              <li class="project-item active" data-filter-item data-category="${lang.toLowerCase()}">
+                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                  <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                  </div>
+                    <img src="https://opengraph.githubassets.com/1/${GITHUB_USERNAME}/${repo.name}" 
+                         alt="${repo.name}" 
+                         loading="lazy"
+                         onerror="this.style.background='var(--eerie-black-1)'; this.style.padding='20px'; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23ffd700%22><path d=%22M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z%22/></svg>';">
+                </figure>
+                  <h3 class="project-title">${repo.name}</h3>
+                  <p class="project-category">
+                    <span class="lang-dot" style="background-color: ${langColor};"></span>
+                    ${lang}
+                  </p>
+                  ${description ? `<p class="project-description">${description}</p>` : '<p class="project-description" style="opacity: 0.5;">No description</p>'}
+                  <div class="repo-stats">
+                    <span><ion-icon name="star-outline"></ion-icon> ${repo.stargazers_count}</span>
+                    <span><ion-icon name="git-network-outline"></ion-icon> ${repo.forks_count}</span>
+                  </div>
+              </a>
+            </li>
+            `;
+          }
+
+          function populateFilters(repos) {
+            const languages = [...new Set(repos.map(r => r.language).filter(Boolean))].sort();
+            
+            // Desktop filter list
+            const filterList = document.getElementById('github-filter-list');
+            languages.slice(0, 5).forEach(lang => {
+              const li = document.createElement('li');
+              li.className = 'filter-item';
+              li.innerHTML = `<button data-filter-btn data-lang="${lang.toLowerCase()}">${lang}</button>`;
+              filterList.appendChild(li);
+            });
+
+            // Mobile select list
+            const selectList = document.getElementById('github-select-list');
+            languages.forEach(lang => {
+              const li = document.createElement('li');
+              li.className = 'select-item';
+              li.innerHTML = `<button data-select-item data-lang="${lang.toLowerCase()}">${lang}</button>`;
+              selectList.appendChild(li);
+            });
+
+            // Add filter functionality
+            setupGitHubFilters();
+          }
+
+          function setupGitHubFilters() {
+            const filterBtns = document.querySelectorAll('[data-filter-btn][data-lang]');
+            const selectItems = document.querySelectorAll('[data-select-item][data-lang]');
+            const projectItems = document.querySelectorAll('#github-repos-list .project-item');
+            const selectValue = document.querySelector('.filter-select-box .select-value');
+
+            function filterProjects(selectedLang) {
+              projectItems.forEach(item => {
+                const itemLang = item.dataset.category;
+                if (selectedLang === 'all' || itemLang === selectedLang) {
+                  item.classList.add('active');
+                } else {
+                  item.classList.remove('active');
+                }
+              });
+            }
+
+            filterBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                filterProjects(this.dataset.lang);
+              });
+            });
+
+            selectItems.forEach(item => {
+              item.addEventListener('click', function() {
+                const lang = this.dataset.lang;
+                selectValue.textContent = lang === 'all' ? 'All' : this.textContent;
+                filterProjects(lang);
+              });
+            });
+          }
+
+          async function initGitHubRepos() {
+            const repos = await fetchGitHubRepos();
+            const loading = document.getElementById('github-loading');
+            const reposList = document.getElementById('github-repos-list');
+
+            if (repos.length === 0) {
+              loading.innerHTML = `
+                <p style="color: var(--orange-yellow-crayola);">Unable to load repositories</p>
+                <p style="font-size: 13px; margin-top: 8px;">GitHub API rate limit may have been exceeded. Please refresh in a few minutes.</p>
+                <a href="https://github.com/${GITHUB_USERNAME}?tab=repositories" target="_blank" 
+                   style="display: inline-block; margin-top: 15px; padding: 10px 20px; background: var(--onyx); border-radius: 8px; color: var(--white-2); text-decoration: none;">
+                  View on GitHub →
+                </a>
+              `;
+              return;
+            }
+
+            // Pinned repos to show first (in order)
+            const pinnedRepoNames = [
+              'NotebookLlama',
+              'llama-ocr',
+              'repo2txt',
+              'github2portfolio',
+              'car-dealer-ai-agent',
+              'virtual-cloth-Try-On-ai',
+              'avatar-generator'
+            ];
+
+            // Repos to exclude from display
+            const excludedRepos = [
+              'Shoping-E-commerce-Webiste',
+              'casecubra',
+              'pfolio',
+              'kitab.online',
+              'card-Responsive-without-media-query-',
+              'Calculater-by-javascript',
+              'website-design-fully-responsive',
+              'email-sender-js',
+              'resizable-iframe',
+              'gradient-generator',
+              'form-in-ror',
+              'clientWork',
+              'modren-portfolio',
+              'horizontal-scrolling-website',
+              'Signu-form',
+              'pantry-tracker',
+              'flashcard-generator',
+              'Kamboh-div-software-company',
+              'ahkamboh',
+              'EducationHub',
+              'Minimalist_Rhyming_Clock',
+              'Terzo.ai',
+              'Portfolio',
+              'advanc-web-uni-lecture',
+              '3D-website-megma'
+            ];
+
+            // Filter out forked repos and excluded repos
+            const ownRepos = repos.filter(r => !r.fork && !excludedRepos.includes(r.name));
+
+            // Sort: pinned repos first (in order), then rest by updated date
+            const sortedRepos = ownRepos.sort((a, b) => {
+              const aIndex = pinnedRepoNames.indexOf(a.name);
+              const bIndex = pinnedRepoNames.indexOf(b.name);
+              
+              // Both are pinned - sort by pinned order
+              if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+              // Only a is pinned - a comes first
+              if (aIndex !== -1) return -1;
+              // Only b is pinned - b comes first
+              if (bIndex !== -1) return 1;
+              // Neither pinned - sort by updated date (already sorted from API)
+              return 0;
+            });
+
+            // Render repo cards FIRST
+            reposList.innerHTML = sortedRepos.map(createRepoCard).join('');
+
+            // Show repos, hide loading
+            loading.style.display = 'none';
+            reposList.style.display = '';
+
+            // Populate filter buttons and setup filters AFTER cards are rendered
+            populateFilters(sortedRepos);
+          }
+
+          // Initialize when DOM is ready
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initGitHubRepos);
+          } else {
+            initGitHubRepos();
+          }
+        </script>
 
       </article>
 
@@ -1292,7 +1682,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="poetry">
+      <article class="blog" data-page="poetry" style="display: none;">
 
         <header>
           <h2 class="h2 article-title">
@@ -2529,7 +2919,161 @@
       </article>
 
 
+      <!--
+        - #BLOG
+      -->
 
+      <article class="blog-page" data-page="blog">
+
+        <header class="blog-header">
+          <h2 class="h2 article-title">Blog</h2>
+          <p class="blog-header-desc">
+            Agentic AI systems engineering and task-driven automation for data-intensive, decision-critical products.
+          </p>
+        </header>
+
+        <!-- Blog List View -->
+        <section class="blog-list-section" id="blogListSection">
+          
+          <!-- Featured Post -->
+          <div class="blog-featured">
+            <span class="blog-featured-label">Featured</span>
+            <div class="blog-featured-card" data-slug="building-notebookllama">
+              <div class="blog-featured-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/NotebookLlama" alt="NotebookLlama" loading="lazy">
+              </div>
+              <div class="blog-featured-content">
+                <span class="blog-featured-date">Oct 27, 2024 • 8 min read</span>
+                <h3 class="blog-featured-title">Building NotebookLlama: Open Source NotebookLM Alternative</h3>
+                <p class="blog-featured-excerpt">When Google released NotebookLM, I was fascinated. An AI that deeply understands your documents and lets you have meaningful conversations about them? I built an open source alternative with 60+ stars on GitHub.</p>
+                <div class="blog-featured-stats">
+                  <span class="blog-stat"><ion-icon name="star-outline"></ion-icon> 60 stars</span>
+                  <span class="blog-stat"><ion-icon name="git-branch-outline"></ion-icon> 5 forks</span>
+                  <span class="blog-stat"><ion-icon name="logo-python"></ion-icon> Python</span>
+                </div>
+              </div>
+              <ion-icon name="arrow-forward-outline" class="blog-featured-arrow"></ion-icon>
+            </div>
+          </div>
+
+          <h3 class="blog-year-heading">2024</h3>
+          <ul class="blog-posts-grid" id="blog-posts-grid">
+            <li class="blog-post-card" data-slug="ai-avatar-generator">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/avatar-generator" alt="AI Avatar Generator" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Nov 24, 2024 • 5 min read</span>
+                <h4 class="blog-post-title">AI Avatar Generator: Text-to-Avatar That Actually Works</h4>
+                <p class="blog-post-excerpt">A magical AI-powered tool that transforms text descriptions into stunning digital avatars. 4 stars on GitHub...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="virtual-cloth-try-on">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/virtual-cloth-Try-On-ai" alt="Virtual Cloth Try-On" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Nov 23, 2024 • 7 min read</span>
+                <h4 class="blog-post-title">Virtual Cloth Try-On: AI-Powered Fashion Visualization</h4>
+                <p class="blog-post-excerpt">What if you could try on clothes without wearing them? Built with OOTDiffusion model...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="github2portfolio-launch">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/github2portfolio" alt="GitHub2Portfolio" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Nov 15, 2024 • 4 min read</span>
+                <h4 class="blog-post-title">GitHub2Portfolio: Transform Your Profile Into a Portfolio</h4>
+                <p class="blog-post-excerpt">Enter your GitHub username, get a beautiful portfolio website. No config, always up-to-date...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="repo2txt-for-llms">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/repo2txt" alt="Repo2Txt" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Oct 26, 2024 • 5 min read</span>
+                <h4 class="blog-post-title">Repo2Txt: Converting GitHub Repos to LLM-Friendly Text</h4>
+                <p class="blog-post-excerpt">Dump entire repos into a single text file for LLM training. Useful for understanding codebases fast...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="cortex-ai-crm">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/car-dealer-ai-agent" alt="Cortex AI CRM" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Oct 22, 2024 • 6 min read</span>
+                <h4 class="blog-post-title">Cortex: Building an AI-Powered CRM for Car Dealerships</h4>
+                <p class="blog-post-excerpt">An AI-powered CRM designed specifically for car dealerships. Understanding automotive sales cycles...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="llama-ocr-journey">
+              <div class="blog-post-img">
+                <img src="https://opengraph.githubassets.com/1/ahkamboh/llama-ocr" alt="DocOCR.AI" loading="lazy">
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">Oct 22, 2024 • 6 min read</span>
+                <h4 class="blog-post-title">DocOCR.AI: Building a Powerful Document AI with Next.js</h4>
+                <p class="blog-post-excerpt">Leveraging AI to analyze images and documents. Object detection, text recognition, and content description...</p>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="blog-year-heading">General</h3>
+          <ul class="blog-posts-grid">
+            <li class="blog-post-card" data-slug="building-scalable-systems">
+              <div class="blog-post-img blog-post-img-icon">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">6 min read</span>
+                <h4 class="blog-post-title">Building Scalable Systems</h4>
+                <p class="blog-post-excerpt">Scalability isn't just about handling more users—it's about systems that grow gracefully...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="automation-best-practices">
+              <div class="blog-post-img blog-post-img-icon">
+                <ion-icon name="cog-outline"></ion-icon>
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">5 min read</span>
+                <h4 class="blog-post-title">Automation Best Practices</h4>
+                <p class="blog-post-excerpt">Automation isn't just about scripts—it's about systems that reduce manual effort reliably...</p>
+              </div>
+            </li>
+
+            <li class="blog-post-card" data-slug="getting-started-with-ai">
+              <div class="blog-post-img blog-post-img-icon">
+                <ion-icon name="flash-outline"></ion-icon>
+              </div>
+              <div class="blog-post-content">
+                <span class="blog-post-date">6 min read</span>
+                <h4 class="blog-post-title">Getting Started with AI Systems</h4>
+                <p class="blog-post-excerpt">Building intelligent software systems is no longer reserved for research labs...</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Blog Post View (shows when viewing individual post) -->
+        <section class="blog-post-view" id="blogPostView" style="display: none;">
+          <button class="blog-back-btn" id="blogBackBtn">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Blog</span>
+          </button>
+          <div class="blog-post-body" id="blogPostBody">
+            <div class="blog-loading">Loading...</div>
+          </div>
+        </section>
+
+      </article>
 
 
       <!--
@@ -2542,20 +3086,11 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.0094354790494!2d73.72902251579906!3d31.797492781278844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918bbde8550225d%3A0x181cc0d503cf39a3!2sAli%20Hamza%20Kamboh!5e0!3m2!1sen!2s!4v1680618939062!5m2!1sen!2s"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Get in Touch</h3>
 
-          <form onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
+          <form onsubmit="openGmail(); return false;" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required
@@ -2574,6 +3109,24 @@
 
           </form>
 
+          <script>
+            function openGmail() {
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const message = document.getElementById('message').value;
+              
+              const to = 'ahk@alihamzakamboh.com';
+              const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+              
+              // Open Gmail compose
+              window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`, '_blank');
+              
+              // Reset form
+              document.querySelector('form').reset();
+            }
+          </script>
+
         </section>
 
       </article>
@@ -2586,17 +3139,575 @@
          <script src="assets/js/typed.umd.js" ></script>
 	  <!-- main js link-->     
 	  <script src="assets/js/script.js" ></script>   	  
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <!--
     - Form validation notification and Email sender 
   -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+  <!-- Blog Post Handler -->
+  <script>
+    (function() {
+      const blogListSection = document.getElementById('blogListSection');
+      const blogPostView = document.getElementById('blogPostView');
+      const blogPostBody = document.getElementById('blogPostBody');
+      const blogBackBtn = document.getElementById('blogBackBtn');
+      const blogPostCards = document.querySelectorAll('.blog-post-card');
+      const blogFeaturedCard = document.querySelector('.blog-featured-card');
+      
+      // Load a blog post by slug
+      async function loadBlogPost(slug) {
+        blogListSection.style.display = 'none';
+        blogPostView.style.display = 'block';
+        blogPostBody.innerHTML = '<div class="blog-loading">Loading...</div>';
+        
+        try {
+          const response = await fetch(`assets/blog/${slug}.md`);
+          if (!response.ok) throw new Error('Post not found');
+          const markdown = await response.text();
+          const html = marked.parse(markdown);
+          blogPostBody.innerHTML = html;
+          window.scrollTo(0, 0);
+        } catch (error) {
+          blogPostBody.innerHTML = `
+            <h1>Post Not Found</h1>
+            <p>Sorry, this blog post could not be loaded.</p>
+            <p>Create a file at: <code>assets/blog/${slug}.md</code></p>
+          `;
+        }
+      }
+      
+      // Show blog list
+      function showBlogList() {
+        blogListSection.style.display = 'block';
+        blogPostView.style.display = 'none';
+        
+        // Update URL - remove post param
+        const url = new URL(window.location);
+        url.searchParams.delete('post');
+        window.history.pushState({}, '', url);
+      }
+      
+      // Click on blog post card
+      blogPostCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const slug = card.dataset.slug;
+          
+          // Update URL with post param
+          const url = new URL(window.location);
+          url.searchParams.set('tab', 'blog');
+          url.searchParams.set('post', slug);
+          window.history.pushState({}, '', url);
+          
+          loadBlogPost(slug);
+        });
+      });
+      
+      // Click on featured card
+      if (blogFeaturedCard) {
+        blogFeaturedCard.addEventListener('click', () => {
+          const slug = blogFeaturedCard.dataset.slug;
+          
+          const url = new URL(window.location);
+          url.searchParams.set('tab', 'blog');
+          url.searchParams.set('post', slug);
+          window.history.pushState({}, '', url);
+          
+          loadBlogPost(slug);
+        });
+      }
+      
+      // Back button
+      blogBackBtn.addEventListener('click', showBlogList);
+      
+      // Check URL for post param on page load
+      function checkUrlForPost() {
+        const params = new URLSearchParams(window.location.search);
+        const post = params.get('post');
+        const tab = params.get('tab');
+        
+        if (tab === 'blog' && post) {
+          loadBlogPost(post);
+        } else {
+          showBlogList();
+        }
+      }
+      
+      // Handle browser back/forward
+      window.addEventListener('popstate', () => {
+        const params = new URLSearchParams(window.location.search);
+        const post = params.get('post');
+        const tab = params.get('tab');
+        
+        if (tab === 'blog' && post) {
+          loadBlogPost(post);
+        } else if (tab === 'blog') {
+          showBlogList();
+        }
+      });
+      
+      // Initial check
+      setTimeout(checkUrlForPost, 100);
+    })();
+  </script>
 	
    <!-- ionic link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
-  <!--
+  <!-- Terminal Intro Animation -->
+  <script>
+    (function() {
+      const terminalOutput = document.getElementById('terminalOutput');
+      const terminalIntro = document.getElementById('terminalIntro');
+      const terminalProgress = document.getElementById('terminalProgress');
+      const progressFill = document.getElementById('progressFill');
+      const progressText = document.getElementById('progressText');
+      
+      // Terminal lines to display
+      const lines = [
+        { text: 'whoami', type: 'command', delay: 300 },
+        { text: 'Ali Hamza Kamboh', type: 'highlight', delay: 100 },
+        { text: '', type: 'output', delay: 200 },
+        { text: 'cat role.txt', type: 'command', delay: 300 },
+        { text: 'Software Engineer & AI Systems Architect', type: 'output', delay: 100 },
+        { text: 'Founder & CTO @ Xaibridge', type: 'dim', delay: 100 },
+        { text: '', type: 'output', delay: 200 },
+        { text: 'ls -la skills/', type: 'command', delay: 300 },
+        { text: 'AI Systems · Automation · Machine Learning', type: 'output', delay: 100 },
+        { text: '', type: 'output', delay: 300 },
+        { text: './init-portfolio.sh', type: 'command', delay: 400 },
+      ];
+      
+      let currentLine = 0;
+      let currentChar = 0;
+      let currentElement = null;
+      
+      // Audio system with toggle
+        const soundToggle = document.getElementById('soundToggle');
+        const audioSystem = {
+          context: null,
+          unlocked: false,
+          enabled: false, // Sound is OFF by default until user enables
+          
+          init() {
+            if (!this.context) {
+              this.context = new (window.AudioContext || window.webkitAudioContext)();
+            }
+          },
+          
+          tryUnlock() {
+            if (!this.context) return;
+            if (this.context.state === 'suspended') {
+              this.context.resume().then(() => {
+                this.unlocked = true;
+              }).catch(() => {});
+            } else if (this.context.state === 'running') {
+              this.unlocked = true;
+            }
+          },
+          
+          enable() {
+            if (this.enabled) return; // Already enabled
+            this.enabled = true;
+            this.tryUnlock();
+            soundToggle.classList.add('active');
+          },
+          
+          disable() {
+            this.enabled = false;
+            soundToggle.classList.remove('active');
+          },
+          
+          toggle() {
+            if (this.enabled) {
+              this.disable();
+            } else {
+              this.enable();
+            }
+          },
+        
+// Mechanical keyboard sound
+          playKeySound() {
+            if (!this.context || !this.enabled) return;
+            this.tryUnlock();
+          
+          const ctx = this.context;
+          const now = ctx.currentTime;
+          
+          // Create noise for click
+          const bufferSize = ctx.sampleRate * 0.03;
+          const noiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+          const noiseData = noiseBuffer.getChannelData(0);
+          
+          for (let i = 0; i < bufferSize; i++) {
+            noiseData[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufferSize * 0.1));
+          }
+          
+          const noiseSource = ctx.createBufferSource();
+          noiseSource.buffer = noiseBuffer;
+          
+          // Filter for mechanical sound
+          const filter = ctx.createBiquadFilter();
+          filter.type = 'bandpass';
+          filter.frequency.value = 2000 + Math.random() * 1000;
+          filter.Q.value = 1;
+          
+          // Volume envelope
+          const gainNode = ctx.createGain();
+          gainNode.gain.setValueAtTime(0.1 + Math.random() * 0.05, now);
+          gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.03);
+          
+          // Add subtle click tone
+          const clickOsc = ctx.createOscillator();
+          clickOsc.type = 'square';
+          clickOsc.frequency.value = 1200 + Math.random() * 400;
+          
+          const clickGain = ctx.createGain();
+          clickGain.gain.setValueAtTime(0.03, now);
+          clickGain.gain.exponentialRampToValueAtTime(0.001, now + 0.01);
+          
+          // Connect
+          noiseSource.connect(filter);
+          filter.connect(gainNode);
+          gainNode.connect(ctx.destination);
+          
+          clickOsc.connect(clickGain);
+          clickGain.connect(ctx.destination);
+          
+          // Play
+          noiseSource.start(now);
+          noiseSource.stop(now + 0.03);
+          clickOsc.start(now);
+          clickOsc.stop(now + 0.015);
+        },
+        
+// Enter key sound (deeper)
+          playEnterSound() {
+            if (!this.context || !this.enabled) return;
+            this.tryUnlock();
+          
+          const ctx = this.context;
+          const now = ctx.currentTime;
+          
+          const osc = ctx.createOscillator();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(300, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.1);
+          
+          const gain = ctx.createGain();
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+          
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          
+          osc.start(now);
+          osc.stop(now + 0.1);
+        },
+        
+// Success beep
+          playSuccessSound() {
+            if (!this.context || !this.enabled) return;
+            this.tryUnlock();
+          
+          const ctx = this.context;
+          const now = ctx.currentTime;
+          
+          [523, 659, 784].forEach((freq, i) => {
+            const osc = ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            
+            const gain = ctx.createGain();
+            gain.gain.setValueAtTime(0, now + i * 0.1);
+            gain.gain.linearRampToValueAtTime(0.1, now + i * 0.1 + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.1 + 0.15);
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.start(now + i * 0.1);
+            osc.stop(now + i * 0.1 + 0.15);
+          });
+        }
+      };
+      
+      function typeCharacter() {
+        const line = lines[currentLine];
+        
+        if (currentChar === 0) {
+          currentElement = document.createElement('div');
+          currentElement.className = 'terminal-line ' + line.type;
+          terminalOutput.appendChild(currentElement);
+        }
+        
+        if (currentChar < line.text.length) {
+          const char = line.text[currentChar];
+          currentElement.innerHTML = line.text.substring(0, currentChar + 1) + '<span class="typing-cursor"></span>';
+          
+          if (char !== ' ') {
+            audioSystem.playKeySound();
+          }
+          
+          currentChar++;
+          const speed = line.type === 'command' ? 50 : 30;
+          setTimeout(typeCharacter, speed + Math.random() * 25);
+        } else {
+          currentElement.innerHTML = line.text;
+          audioSystem.playEnterSound();
+          currentChar = 0;
+          currentLine++;
+          
+          if (currentLine < lines.length) {
+            setTimeout(typeCharacter, lines[currentLine].delay);
+          } else {
+            showProgress();
+          }
+        }
+      }
+      
+      function showProgress() {
+        terminalProgress.classList.add('active');
+        
+        const steps = [
+          { progress: 20, text: 'Loading assets...' },
+          { progress: 45, text: 'Initializing components...' },
+          { progress: 70, text: 'Connecting systems...' },
+          { progress: 90, text: 'Almost ready...' },
+          { progress: 100, text: 'Complete!' }
+        ];
+        
+        let stepIndex = 0;
+        
+        function updateProgress() {
+          if (stepIndex < steps.length) {
+            progressFill.style.width = steps[stepIndex].progress + '%';
+            progressText.textContent = steps[stepIndex].text;
+            stepIndex++;
+            setTimeout(updateProgress, 350);
+          } else {
+            audioSystem.playSuccessSound();
+            setTimeout(hideTerminal, 600);
+          }
+        }
+        
+        setTimeout(updateProgress, 300);
+      }
+      
+      function hideTerminal() {
+        terminalIntro.classList.add('hidden');
+        document.body.classList.remove('intro-active');
+        document.body.classList.add('intro-complete');
+        
+        // Disable sound and hide toggle button
+        audioSystem.disable();
+        soundToggle.classList.add('hidden');
+        
+        // Disable sound completely after intro
+        audioSystem.enabled = false;
+        audioSystem.context = null;
+        
+        setTimeout(() => {
+          terminalIntro.remove();
+          soundToggle.remove();
+        }, 1000);
+      }
+      
+      function startIntro() {
+        // Initialize audio immediately
+        audioSystem.init();
+        setTimeout(typeCharacter, 600);
+      }
+      
+      function skipIntro() {
+        // Hide intro immediately without animation
+        document.documentElement.classList.add('skip-intro');
+        document.body.classList.add('skip-intro');
+        document.body.classList.remove('intro-active');
+        document.body.classList.add('intro-complete');
+        if (terminalIntro) terminalIntro.remove();
+        if (soundToggle) soundToggle.remove();
+      }
+      
+      function shouldShowIntro() {
+        const INTRO_COOLDOWN = 5 * 60 * 1000; // 5 minutes in milliseconds
+        const lastShown = localStorage.getItem('portfolio_intro_shown');
+        
+        if (lastShown) {
+          const timeSinceLastShown = Date.now() - parseInt(lastShown, 10);
+          if (timeSinceLastShown < INTRO_COOLDOWN) {
+            return false; // Don't show intro, still within cooldown
+          }
+        }
+        return true; // Show intro
+      }
+      
+      function markIntroShown() {
+        localStorage.setItem('portfolio_intro_shown', Date.now().toString());
+      }
+      
+// Sound toggle button click handler
+        soundToggle.addEventListener('click', () => {
+          audioSystem.toggle();
+        });
+        
+        // Prevent ALL scrolling during intro
+        const scrollKeys = [32, 33, 34, 35, 36, 37, 38, 39, 40]; // space, pgup, pgdn, end, home, arrows
+        function preventScroll(e) {
+          if (document.body.classList.contains('intro-active')) {
+            e.preventDefault();
+            return false;
+          }
+        }
+        function preventScrollKeys(e) {
+          if (document.body.classList.contains('intro-active') && scrollKeys.includes(e.keyCode)) {
+            e.preventDefault();
+            return false;
+          }
+        }
+        
+        window.addEventListener('wheel', preventScroll, { passive: false });
+        window.addEventListener('touchmove', preventScroll, { passive: false });
+        window.addEventListener('keydown', preventScrollKeys, { passive: false });
+        
+        // Auto-enable sound on first interaction (only during intro)
+        let soundAutoEnabled = false;
+        const enableOnInteraction = (e) => {
+          if (soundAutoEnabled) return;
+          soundAutoEnabled = true;
+          audioSystem.enable();
+        };
+        
+        // These listeners auto-remove when intro ends (elements are removed)
+        document.addEventListener('click', enableOnInteraction, { once: true });
+        document.addEventListener('keydown', enableOnInteraction, { once: true });
+        document.addEventListener('touchstart', enableOnInteraction, { once: true });
+      
+      // Start when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          if (shouldShowIntro()) {
+            markIntroShown();
+            startIntro();
+          } else {
+            skipIntro();
+          }
+        });
+      } else {
+        if (shouldShowIntro()) {
+          markIntroShown();
+          startIntro();
+        } else {
+          skipIntro();
+        }
+      }
+    })();
+  </script>
+
+  <!-- GitHub Activity Stats -->
+  <script>
+    (function() {
+      const username = 'ahkamboh';
+      const statsContainer = document.getElementById('github-stats');
+      
+      const STATS_CACHE_DURATION = 60 * 60 * 1000; // 1 hour
+      
+      function renderStats(userData) {
+        statsContainer.innerHTML = `
+          <div class="stat-item">
+            <span class="stat-value">${userData.public_repos || '—'}</span>
+            <span>Repositories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">${userData.followers || '—'}</span>
+            <span>Followers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">${userData.following || '—'}</span>
+            <span>Following</span>
+          </div>
+        `;
+      }
+      
+      async function fetchGitHubStats() {
+        // Check cache first
+        try {
+          const cached = localStorage.getItem('github_stats_cache');
+          if (cached) {
+            const { data, timestamp } = JSON.parse(cached);
+            const age = Date.now() - timestamp;
+            
+            // Use cache if less than 1 hour old
+            if (age < STATS_CACHE_DURATION) {
+              console.log('Using cached GitHub stats');
+              renderStats(data);
+              return;
+            }
+          }
+        } catch (e) { /* ignore */ }
+        
+        // Fetch fresh data
+        try {
+          const userRes = await fetch(`https://api.github.com/users/${username}`);
+          
+          if (!userRes.ok) {
+            throw new Error('Rate limited or failed');
+          }
+          
+          const userData = await userRes.json();
+          
+          // Cache the data
+          try {
+            localStorage.setItem('github_stats_cache', JSON.stringify({
+              data: userData,
+              timestamp: Date.now()
+            }));
+          } catch (e) { /* ignore */ }
+          
+          renderStats(userData);
+          
+        } catch (error) {
+          console.error('Error fetching GitHub stats:', error);
+          
+          // Try expired cache
+          try {
+            const cached = localStorage.getItem('github_stats_cache');
+            if (cached) {
+              const { data } = JSON.parse(cached);
+              renderStats(data);
+              return;
+            }
+          } catch (e) { /* ignore */ }
+          
+          // Fallback display
+          statsContainer.innerHTML = `
+            <div class="stat-item">
+              <span class="stat-value">—</span>
+              <span>Repositories</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">—</span>
+              <span>Followers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">—</span>
+              <span>Following</span>
+            </div>
+          `;
+        }
+      }
+      
+      // Fetch data when page loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fetchGitHubStats);
+      } else {
+        fetchGitHubStats();
+      }
+    })();
+  </script>
 </body>
 
 </html>

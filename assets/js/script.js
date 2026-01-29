@@ -120,66 +120,48 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    const clickedNav = this;
+    const targetPage = this.innerHTML.toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+    // Remove active from all nav links
+    navigationLinks.forEach(link => link.classList.remove("active"));
+    
+    // Add active to clicked nav link
+    clickedNav.classList.add("active");
+
+    // Show/hide pages
+    for (let j = 0; j < pages.length; j++) {
+      if (targetPage === pages[j].dataset.page) {
+        pages[j].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
       }
     }
 
+    // Update URL
+    const url = new URL(window.location);
+    url.searchParams.set('tab', targetPage);
+    url.searchParams.delete('post');
+    window.history.pushState({}, '', url);
   });
 }
 // Email sender 
-function sendEmail() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-
-  const params = {
-    user_name: name,
-    user_email: email,
-    user_message: message
-  };
-  const Tparams = {
-    user_name: name,
-    user_email: email,
-
-  };
-
-  console.log("Sending email with params:", params);
-  // Send email to admin
-  emailjs.send("service_3ovd4zr", "template_6smdvnd", params)
-    .then(function (response) {
-      console.log('Admin email sent successfully:', response);
-    })
-    .catch(function (error) {
-      console.error('Failed to send admin email. Error:', error);
-    });
-
-  // Send thank-you email to user
-  emailjs.send("service_3ovd4zr", "template_5px6g9g", Tparams)
-    .then(function (response) {
-      console.log('Thank-you email sent successfully:', response);
-      alert("Thanks " + name + " For joining ahkamboh 😊. We will send you responsive email Soon");
-    })
-    .catch(function (error) {
-      console.error('Failed to send thank-you email. Error:', error);
-    });
-}
+// Email function moved to inline script in contact form (redirects to Gmail)
 
 
 // typed animation 
 var typed = new Typed('.title', {
-  strings: ['Web Developer', ' Coder ',' Poet ',' Youtuber '],
+  strings: ['Software Engineer', 'AI Systems Architect'],
   loop: true,
-  typeSpeed: 200,
-  backSpeed:100 ,  
-  startDelay:50 ,         
+  typeSpeed: 50,
+  backSpeed: 30,  
+  startDelay: 500,
+  backDelay: 2500,
+  loopCount: Infinity,
+  smartBackspace: false,
+  fadeOut: false,
+  showCursor: false,
 });
 
 // ---------------------------------------
